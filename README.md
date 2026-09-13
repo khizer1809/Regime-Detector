@@ -4,7 +4,9 @@ A Gaussian HMM regime detector for BTCUSDT (5-minute bars): classifies the marke
 
 ## Key finding
 
-A 100-fold walk-forward experiment compared two training-window strategies — a fixed rolling 6-month window vs. an expanding window that trains on all available history — across both a 4-state and 6-state HMM. **Expanding-window wins decisively out-of-sample** (HMM-4: 91/100 folds, HMM-6: 96/100 folds, both far beyond chance), so that's what this repo's production model uses. Full write-up, methodology, and all nine conclusion questions answered against the data: [`Data/rolling_vs_expanding_final_report.md`](Data/rolling_vs_expanding_final_report.md).
+A 100-fold walk-forward experiment compared two training-window strategies — a fixed rolling 6-month window vs. an expanding window that trains on all available history — across both a 4-state and 6-state HMM. **Expanding-window wins decisively out-of-sample** (HMM-4: 91/100 folds, HMM-6: 96/100 folds, both far beyond chance), so that's what this repo's production model uses.
+
+**[See `RESULTS.md` for charts and the full breakdown](RESULTS.md)**, or [`Data/rolling_vs_expanding_final_report.md`](Data/rolling_vs_expanding_final_report.md) for the complete methodology and all nine conclusion questions answered against the data.
 
 ## Pipeline
 
