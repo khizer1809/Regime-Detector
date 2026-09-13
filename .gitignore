@@ -1,0 +1,12 @@
+# Large source feature matrices -- regenerate locally via refresh_features.py
+# (or the original data pipeline). Far over GitHub's 100MB file limit anyway.
+Data/features_out.csv
+Data/features_out_masked.csv
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Editor/tooling
+.claude/
