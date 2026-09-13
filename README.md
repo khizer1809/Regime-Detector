@@ -10,28 +10,17 @@ A 100-fold walk-forward experiment compared two training-window strategies — a
 
 ## Pipeline
 
-```
-Raw Binance 5m candles
-        |
-        v
-features.py            -- 18 features: returns, volatility, volume/order-flow, skew
-        |
-        v
-gap_aware.py            -- masks zero-volume/gap bars (no blanket dropna(); verified
-        |                   against Binance's own historical API that these gaps are
-        |                   genuine, not data errors -- see the final report)
-        v
-save_production_model.py -- fits a fresh GaussianHMM on ALL history (expanding window),
-        |                    5 random restarts, best kept by training log-likelihood
-        v
-Data/production_model_hmm{4,6}.pkl
-        |
-        v
-infer_regime.py          -- fetches live data via binance_fetch.py, decodes the
-                             current regime with a human-readable label + confidence
-```
+![Pipeline: Binance API to features.py to gap_aware.py to save_production_model.py to a .pkl model to infer_regime.py](Data/plots/pipeline.png)
 
 `refresh_features.py` incrementally updates the local feature file with new bars from Binance without rebuilding history from scratch.
+
+## What is a "regime," actually?
+
+Not a label anyone assigned by hand — it's whatever the HMM's own math discovers by fitting a Gaussian mixture with Markov transitions to the feature history, then each state gets characterized after the fact from its own mean feature vector (trend direction from the return columns, volatility level from the vol columns). Below is exactly what the real production HMM-4 model (`Data/production_model_hmm4.pkl`) learned — 4 states, their self-transition probability (how often a regime persists to the next 5-minute bar), and how they transition into each other:
+
+![State diagram: Uptrend/Mid-Vol, Ranging/High-Vol, Ranging/Low-Vol, Downtrend/Mid-Vol, with transition probabilities between them, from the real trained model](Data/plots/regime_states.png)
+
+Two things worth noticing: every regime is far more likely to persist than to switch (85-94% self-transition), and the two "Ranging" states are the stickiest — matching the intuition that calm/directionless markets tend to stay that way longer than trends do.
 
 ## Usage
 
