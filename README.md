@@ -35,7 +35,7 @@ python infer_regime.py [N_STATES] [CONTEXT_BARS]
 **Retrain the production model** on all available history:
 ```
 python save_production_model.py [N_STATES]
-# e.g. python save_production_model.py 6
+# e.g. python save_production_model.py 4   (defaults to 4 if omitted)
 ```
 
 **Refresh the local feature file** with new bars since it was last built:
@@ -54,7 +54,8 @@ python refresh_features.py
 | `src/binance_fetch.py` | Live 5m candle fetch from Binance's public API |
 | `src/refresh_features.py` | Incrementally appends new bars to the feature file |
 | `src/infer_regime.py` | Loads a saved model + live data → current regime |
-| `Data/production_model_hmm4.pkl` / `hmm6.pkl` | Trained production models (4-state / 6-state) |
+| `Data/production_model_hmm4.pkl` | **Production model** (4-state, `infer_regime.py`/`save_production_model.py` default) |
+| `Data/production_model_hmm6.pkl` | 6-state model kept for reference/comparison — not used in production (see `RESULTS.md`) |
 | `Data/rolling_vs_expanding_final_report.md` | Full experiment write-up behind the training-strategy choice |
 
 `Data/features_out.csv` and `Data/features_out_masked.csv` (the full historical feature matrices, ~785MB combined) are gitignored — regenerate locally via `refresh_features.py` starting from an existing copy, or the original feature-building pipeline.

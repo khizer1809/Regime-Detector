@@ -26,10 +26,10 @@ Early in the walk-forward series, expanding-window has barely more data than rol
 
 <img src="Data/plots/runtime_cost.png" width="600" alt="Expanding-window costs about 11x more compute than rolling-window for both HMM-4 and HMM-6">
 
-Expanding-window trains on progressively more data every fold — by the last fold it's ~900K bars vs. rolling's fixed ~52K. That shows up directly in compute cost: roughly **11x** more for both models. In production terms this is a single retrain, not a 100-fold backtest — a one-off HMM-6 retrain on the full history takes on the order of ~20-25 minutes, not hours. Still worth knowing the shape of the tradeoff before choosing a retraining cadence.
+Expanding-window trains on progressively more data every fold — by the last fold it's ~900K bars vs. rolling's fixed ~52K. That shows up directly in compute cost: roughly **11x** more for both models. In production terms this is a single retrain, not a 100-fold backtest — a one-off HMM-4 retrain on the full history takes on the order of ~9 minutes, not hours (HMM-6 would run ~20-25 minutes for the same retrain, part of why HMM-4 was chosen for production). Still worth knowing the shape of the tradeoff before choosing a retraining cadence.
 
 ## Bottom line
 
-Expanding-window is the better choice — wins decisively out of sample, the win grows over time, and shows no stability degradation (zero degenerate/collapsed-state folds, zero convergence failures, in either test). The production model in this repo (`Data/production_model_hmm6.pkl`) is trained this way.
+Expanding-window is the better choice — wins decisively out of sample, the win grows over time, and shows no stability degradation (zero degenerate/collapsed-state folds, zero convergence failures, in either test). The production model in this repo (`Data/production_model_hmm4.pkl`) is trained this way. HMM-6 edges out HMM-4 slightly on out-of-sample likelihood, but HMM-4 was chosen for production: it's ~2.4x cheaper to retrain and its 4 states each map to a distinct human-readable label, whereas HMM-6's 6 states collapse onto only 4 distinct labels under the current labeling scheme (three separate states all read as "Ranging / Low-Vol").
 
 For the full methodology, restart-stability breakdown, gap-handling coverage analysis, and all nine conclusion questions answered against the data: **[`Data/rolling_vs_expanding_final_report.md`](Data/rolling_vs_expanding_final_report.md)**.
