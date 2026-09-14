@@ -3,6 +3,10 @@
 Data/features_out.csv
 Data/features_out_masked.csv
 
+# Persistence gate's historical training table -- regenerate locally via
+# persistence_dataset.py. Also over GitHub's 100MB limit.
+Data/persistence_training_table.csv
+
 # Python
 __pycache__/
 *.pyc

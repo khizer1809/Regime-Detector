@@ -40,7 +40,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))) 
 
 from binance_fetch import fetch_recent
 from features import build_feature_matrix
-from gap_aware import MAX_LOOKBACK_BARS, build_validity_mask
+from gap_aware import MAX_LOOKBACK_BARS, build_validity_mask, segment_lengths
 
 _ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -88,15 +88,24 @@ def load_artifact(n_states: int) -> dict:
         return pickle.load(f)
 
 
-def infer():
-    artifact = load_artifact(N_STATES)
+def decode_current_regime(n_states: int = None, context_bars: int = None):
+    """Fetches live data and decodes the current regime -- the same fetch->
+    features->mask->scale->predict pipeline `infer()` prints, but returned
+    as a dict for reuse (e.g. by persistence_gate.py) instead of only being
+    printed. Returns None if the most recent bar is invalid (zero-volume/
+    gap or NaN feature): there is nothing to report for it, same condition
+    that used to end `infer()` early with the "[UNAVAILABLE]" message."""
+    n_states = N_STATES if n_states is None else n_states
+    context_bars = CONTEXT_BARS if context_bars is None else context_bars
+
+    artifact = load_artifact(n_states)
     model, scaler, feature_cols = artifact["model"], artifact["scaler"], artifact["feature_columns"]
-    print(f"Loaded {N_STATES}-state production model "
+    print(f"Loaded {n_states}-state production model "
           f"(trained {artifact['train_start']} -> {artifact['train_end']}, "
           f"{artifact['n_train_valid']:,} valid bars, strategy={artifact['training_strategy']})", flush=True)
 
-    n_fetch = CONTEXT_BARS + MAX_LOOKBACK_BARS + 12  # + feature lookback + small margin
-    print(f"\nFetching last {n_fetch} bars from Binance ({CONTEXT_BARS} for decode context "
+    n_fetch = context_bars + MAX_LOOKBACK_BARS + 12  # + feature lookback + small margin
+    print(f"\nFetching last {n_fetch} bars from Binance ({context_bars} for decode context "
           f"+ {MAX_LOOKBACK_BARS}-bar feature lookback)...", flush=True)
     raw = fetch_recent(n_fetch)
     print(f"Fetched {len(raw)} bars, {raw.index.min()} -> {raw.index.max()}", flush=True)
@@ -106,7 +115,7 @@ def infer():
     feats = feats[feature_cols].copy()
     feats["valid"] = valid.values
 
-    context = feats.iloc[-CONTEXT_BARS:] if len(feats) > CONTEXT_BARS else feats
+    context = feats.iloc[-context_bars:] if len(feats) > context_bars else feats
 
     last_bar_ts = context.index[-1]
     last_bar_valid = bool(context["valid"].iloc[-1])
@@ -115,9 +124,8 @@ def infer():
         print(f"\n[UNAVAILABLE] The most recent bar ({last_bar_ts}) is INVALID for this model "
               f"(touches a zero-volume/gap window, or has a NaN feature) -- no regime can be "
               f"reported for it. This is a genuine data-availability gap, not an error.")
-        return
+        return None
 
-    from gap_aware import segment_lengths
     valid_context = context[context["valid"]]
     lengths = segment_lengths(valid_context.index)
 
@@ -132,19 +140,32 @@ def infer():
     means_df = pd.DataFrame(model.means_, columns=feature_cols)
     label = characterize_state(means_df.iloc[current_state])
 
+    return {
+        "artifact": artifact, "model": model, "scaler": scaler, "feature_cols": feature_cols,
+        "valid_context": valid_context, "lengths": lengths, "states": states, "posteriors": posteriors,
+        "current_state": current_state, "confidence": confidence, "last_bar_ts": last_bar_ts,
+        "label": label, "means_df": means_df,
+    }
+
+
+def infer():
+    decode = decode_current_regime(N_STATES, CONTEXT_BARS)
+    if decode is None:
+        return
+
     print(f"\n{'='*60}")
-    print(f"CURRENT REGIME as of {last_bar_ts}")
+    print(f"CURRENT REGIME as of {decode['last_bar_ts']}")
     print(f"{'='*60}")
-    print(f"  State: {current_state} (of {N_STATES})")
-    print(f"  Label: {label}")
-    print(f"  Posterior confidence: {confidence:.1%}")
-    print(f"  Decoded using {len(valid_context)} valid bars of context "
-          f"({len(lengths)} contiguous segment(s))")
+    print(f"  State: {decode['current_state']} (of {N_STATES})")
+    print(f"  Label: {decode['label']}")
+    print(f"  Posterior confidence: {decode['confidence']:.1%}")
+    print(f"  Decoded using {len(decode['valid_context'])} valid bars of context "
+          f"({len(decode['lengths'])} contiguous segment(s))")
 
     print(f"\nAll {N_STATES} states, for reference:")
     for s in range(N_STATES):
-        marker = " <- current" if s == current_state else ""
-        print(f"  state {s}: {characterize_state(means_df.iloc[s])}{marker}")
+        marker = " <- current" if s == decode['current_state'] else ""
+        print(f"  state {s}: {characterize_state(decode['means_df'].iloc[s])}{marker}")
 
 
 if __name__ == "__main__":
