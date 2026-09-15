@@ -7,6 +7,14 @@ Data/features_out_masked.csv
 # persistence_dataset.py. Also over GitHub's 100MB limit.
 Data/persistence_training_table.csv
 
+# Archived Trend research (Steps 1-8 + V2/V3/V4 walk-forward experiments,
+# 2025-09-14/15): the research SCRIPTS in research_archive/src/ are tracked
+# (small, valuable for reproducibility); the CACHED DATA they produced
+# (101 fold artifacts, master OOS datasets, per-experiment outputs) is not --
+# 2.5GB, far over GitHub's limits, and regenerable by rerunning the archived
+# scripts against the production HMM/feature cache if ever needed again.
+research_archive/Data/
+
 # Python
 __pycache__/
 *.pyc
