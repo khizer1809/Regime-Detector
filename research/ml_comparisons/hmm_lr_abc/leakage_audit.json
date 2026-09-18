@@ -1,0 +1,33 @@
+{
+  "all_checks_pass": true,
+  "checks": {
+    "hmm_train_before_test": {
+      "violations": [],
+      "n_checked": 103
+    },
+    "extension_anchor_train_before_test": {
+      "violations": [],
+      "n_checked": 101
+    },
+    "fast_decode_validated_vs_windowed": {
+      "note": "v15_validate_fast_decode.py: 0/300 mismatches on real fold_000 data (exact state match, conf/margin diff < 1e-3)",
+      "pass": true
+    },
+    "lr_scaler_fit_train_only": {
+      "note": "v15_stageB_test_ab.py run_walkforward(): StandardScaler().fit_transform(X_train) on pool only; predictions use .transform() only",
+      "pass": true
+    },
+    "persistence_target_unchanged": {
+      "note": "epsilon/usable/label computed identically to v4c_adaptive_fold_threshold.py's methodology, never modified",
+      "pass": true
+    },
+    "forward_2h_return_unchanged": {
+      "note": "forward_ret_24 sourced from valid_df['ret_2h'], same column/logic as the original V2 cache",
+      "pass": true
+    },
+    "same_walkforward_boundaries_and_embargo": {
+      "note": "v2_common.generate_folds() reused unmodified (101 folds, 48-bar embargo, same schedule)",
+      "pass": true
+    }
+  }
+}

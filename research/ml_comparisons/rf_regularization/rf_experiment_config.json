@@ -1,0 +1,77 @@
+{
+  "rf_configs": {
+    "RF-1": {
+      "max_depth": 3,
+      "min_samples_leaf": 100,
+      "min_samples_split": 200,
+      "max_features": "sqrt"
+    },
+    "RF-2": {
+      "max_depth": 5,
+      "min_samples_leaf": 100,
+      "min_samples_split": 200,
+      "max_features": "sqrt"
+    },
+    "RF-3": {
+      "max_depth": 5,
+      "min_samples_leaf": 250,
+      "min_samples_split": 500,
+      "max_features": "sqrt"
+    },
+    "RF-4": {
+      "max_depth": 8,
+      "min_samples_leaf": 100,
+      "min_samples_split": 200,
+      "max_features": "sqrt"
+    },
+    "RF-5": {
+      "max_depth": 8,
+      "min_samples_leaf": 250,
+      "min_samples_split": 500,
+      "max_features": "sqrt"
+    },
+    "RF-6": {
+      "max_depth": 5,
+      "min_samples_leaf": 100,
+      "min_samples_split": 200,
+      "max_features": 0.5
+    },
+    "RF-7": {
+      "max_depth": 8,
+      "min_samples_leaf": 250,
+      "min_samples_split": 500,
+      "max_features": 0.5
+    }
+  },
+  "n_estimators": 300,
+  "seed": 42,
+  "feature_columns": [
+    "confidence",
+    "stay_prob",
+    "log1p_duration",
+    "margin",
+    "hh_strength",
+    "hl_strength",
+    "lh_strength",
+    "ll_strength",
+    "structure_direction",
+    "structure_consistency",
+    "bos_up",
+    "bos_down",
+    "choch_up",
+    "choch_down",
+    "pullback_ratio",
+    "impulse_strength",
+    "distance_from_last_swing_high",
+    "distance_from_last_swing_low",
+    "trend_structure_age"
+  ],
+  "min_pool_rows": 500,
+  "gate_threshold": 0.5,
+  "benchmark_fit_time_s": 9.59094500541687,
+  "estimated_runtime_s": 2712.319247531891,
+  "actual_runtime_s": 3010.8156728744507,
+  "experiment_timestamp": "2026-09-16 23:54:50",
+  "dataset_path": "C:\\Users\\MohammedkhezerK\\Downloads\\Regime Detector\\Regime Detector\\research_archive\\Data\\v2_cache\\trend_threshold_experiment\\adaptive_fold_threshold_master_oos.csv",
+  "structure_features_path": "C:\\Users\\MohammedkhezerK\\Downloads\\Regime Detector\\Regime Detector\\research_archive\\Data\\hmm_lr_abc_experiment\\features_expanded_33.csv"
+}

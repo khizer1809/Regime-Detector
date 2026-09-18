@@ -1,0 +1,88 @@
+{
+  "config": "A",
+  "timeframe": "5m",
+  "n_states_model": 4,
+  "n_features": 18,
+  "feature_columns": [
+    "ret_5m",
+    "ret_15m",
+    "ret_30m",
+    "ret_1h",
+    "ret_2h",
+    "ret_4h",
+    "vol_15m",
+    "vol_1h",
+    "vol_2h",
+    "vol_change",
+    "vol_zscore",
+    "buy_sell_ratio",
+    "ofi_raw",
+    "ofi_zscore",
+    "vwap_dist",
+    "skew_1h",
+    "skew_4h",
+    "updown_asymmetry"
+  ],
+  "n_valid_bars": 923766,
+  "total_days": 3242.2013888888887,
+  "n_transitions": 88738,
+  "n_segments": 88790,
+  "transitions_per_1k_bars": 96.06112370448794,
+  "transitions_per_day": 27.36967552481703,
+  "mean_duration_minutes": 52.01970942673724,
+  "median_duration_minutes": 30.0,
+  "min_duration_minutes": 5.0,
+  "max_duration_minutes": 6525.0,
+  "mean_segment_bars": 10.403941885347448,
+  "median_segment_bars": 6.0,
+  "min_segment_bars": 1,
+  "max_segment_bars": 1305,
+  "pct_1bar": 7.039080977587567,
+  "pct_gt30m": 44.40364905957878,
+  "pct_gt1h": 22.117355558058343,
+  "pct_gt2h": 7.318391710778241,
+  "pct_gt4h": 2.245748395089537,
+  "pct_gt8h": 0.7241806509742088,
+  "n_gt1h": 19638,
+  "n_gt2h": 6498,
+  "n_gt4h": 1994,
+  "n_gt8h": 643,
+  "train_ll": null,
+  "train_ll_per_obs": null,
+  "best_seed": null,
+  "fit_time_s": 0.0,
+  "decode_time_s": 0.0,
+  "distinct_regime_labels": 4,
+  "regime_labels": {
+    "0": "Uptrend / Mid-Vol",
+    "1": "Ranging / Low-Vol",
+    "2": "Downtrend / Mid-Vol",
+    "3": "Ranging / High-Vol"
+  },
+  "transmat": [
+    [
+      0.8624510567867736,
+      0.042360039861405394,
+      0.07725885616839681,
+      0.01793004718342414
+    ],
+    [
+      0.027464648009855663,
+      0.9409201533985913,
+      0.030821923030324064,
+      0.000793275561228905
+    ],
+    [
+      0.08472079131143305,
+      0.04498602069585712,
+      0.8504764103902828,
+      0.019816777602427133
+    ],
+    [
+      0.03672962037695235,
+      1.152971168109748e-57,
+      0.02710415539999042,
+      0.9361662242230573
+    ]
+  ]
+}

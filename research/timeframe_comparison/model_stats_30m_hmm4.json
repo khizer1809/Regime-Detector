@@ -1,0 +1,88 @@
+{
+  "config": "30M",
+  "timeframe": "30m",
+  "n_states_model": 4,
+  "n_features": 18,
+  "feature_columns": [
+    "ret_30m",
+    "ret_1h",
+    "ret_2h",
+    "ret_4h",
+    "ret_8h",
+    "vol_1h",
+    "vol_2h",
+    "vol_4h",
+    "vol_8h",
+    "ema_dist_fast",
+    "ema_dist_slow",
+    "ema_slope_fast",
+    "vol_change",
+    "vol_zscore",
+    "ofi_raw",
+    "ofi_zscore",
+    "skew_4h",
+    "updown_asymmetry"
+  ],
+  "n_valid_bars": 154657,
+  "total_days": 3242.2916666666665,
+  "n_transitions": 80589,
+  "n_segments": 80604,
+  "transitions_per_1k_bars": 521.0821365990547,
+  "transitions_per_day": 24.855567692604254,
+  "mean_duration_minutes": 57.561783534315914,
+  "median_duration_minutes": 30.0,
+  "min_duration_minutes": 30.0,
+  "max_duration_minutes": 5550.0,
+  "mean_segment_bars": 1.9187261178105306,
+  "median_segment_bars": 1.0,
+  "min_segment_bars": 1,
+  "max_segment_bars": 185,
+  "pct_1bar": 55.62627164904968,
+  "pct_gt30m": 44.37372835095032,
+  "pct_gt1h": 18.09959803483698,
+  "pct_gt2h": 4.130067986700412,
+  "pct_gt4h": 1.2890179147436853,
+  "pct_gt8h": 0.3312490695250856,
+  "n_gt1h": 14589,
+  "n_gt2h": 3329,
+  "n_gt4h": 1039,
+  "n_gt8h": 267,
+  "train_ll": -1846022.3858491266,
+  "train_ll_per_obs": -11.936235578403348,
+  "best_seed": 45,
+  "fit_time_s": 42.56270623207092,
+  "decode_time_s": 0.4463787078857422,
+  "distinct_regime_labels": 4,
+  "regime_labels": {
+    "0": "Ranging / Low-Vol",
+    "1": "Uptrend / High-Vol",
+    "2": "Ranging / Mid-Vol",
+    "3": "Downtrend / High-Vol"
+  },
+  "transmat": [
+    [
+      0.34359133357404104,
+      0.023408545547177462,
+      0.6140306768123759,
+      0.018969444066405515
+    ],
+    [
+      0.03468760930913233,
+      0.7874860391632126,
+      0.13278041711934857,
+      0.04504593440830663
+    ],
+    [
+      0.5537347583153591,
+      0.020036249143742607,
+      0.4098876116344713,
+      0.016341380906426985
+    ],
+    [
+      0.015812299511586223,
+      0.04310891365146246,
+      0.09286185759352554,
+      0.8482169292434257
+    ]
+  ]
+}

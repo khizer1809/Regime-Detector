@@ -1,0 +1,88 @@
+{
+  "config": "15M",
+  "timeframe": "15m",
+  "n_states_model": 4,
+  "n_features": 18,
+  "feature_columns": [
+    "ret_15m",
+    "ret_30m",
+    "ret_1h",
+    "ret_2h",
+    "ret_4h",
+    "vol_30m",
+    "vol_1h",
+    "vol_2h",
+    "vol_4h",
+    "ema_dist_fast",
+    "ema_dist_slow",
+    "ema_slope_fast",
+    "vol_change",
+    "vol_zscore",
+    "ofi_raw",
+    "ofi_zscore",
+    "skew_2h",
+    "updown_asymmetry"
+  ],
+  "n_valid_bars": 309721,
+  "total_days": 3242.4791666666665,
+  "n_transitions": 45493,
+  "n_segments": 45517,
+  "transitions_per_1k_bars": 146.88380833072344,
+  "transitions_per_day": 14.030313738844377,
+  "mean_duration_minutes": 102.06768899532042,
+  "median_duration_minutes": 60.0,
+  "min_duration_minutes": 15.0,
+  "max_duration_minutes": 9630.0,
+  "mean_segment_bars": 6.804512599688029,
+  "median_segment_bars": 4.0,
+  "min_segment_bars": 1,
+  "max_segment_bars": 642,
+  "pct_1bar": 13.856361359492059,
+  "pct_gt30m": 69.05551771865457,
+  "pct_gt1h": 45.63349957158864,
+  "pct_gt2h": 22.28617879034207,
+  "pct_gt4h": 6.9820067227629234,
+  "pct_gt8h": 1.8037216864028827,
+  "n_gt1h": 20771,
+  "n_gt2h": 10144,
+  "n_gt4h": 3178,
+  "n_gt8h": 821,
+  "train_ll": -4808176.888785383,
+  "train_ll_per_obs": -15.52421982618351,
+  "best_seed": 43,
+  "fit_time_s": 116.00014925003052,
+  "decode_time_s": 0.799940824508667,
+  "distinct_regime_labels": 4,
+  "regime_labels": {
+    "0": "Ranging / Low-Vol",
+    "1": "Ranging / High-Vol",
+    "2": "Uptrend / Mid-Vol",
+    "3": "Downtrend / Mid-Vol"
+  },
+  "transmat": [
+    [
+      0.8945479656586904,
+      0.0021489294523401262,
+      0.048836620533344074,
+      0.05446648435562545
+    ],
+    [
+      1.4597922218098455e-50,
+      0.8889482580459998,
+      0.058609288612966326,
+      0.05244245334103401
+    ],
+    [
+      0.07576606642932607,
+      0.030832601731180815,
+      0.8099536181360609,
+      0.08344771370343197
+    ],
+    [
+      0.07882565361144991,
+      0.03584403206628489,
+      0.08919130633355966,
+      0.7961390079887055
+    ]
+  ]
+}

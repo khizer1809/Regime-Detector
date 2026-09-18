@@ -1,0 +1,58 @@
+{
+  "results": {
+    "base_rf": {
+      "n": 95978,
+      "roc_auc": 0.5137846074495449,
+      "pr_auc": 0.4767579327517168,
+      "log_loss": 0.6956633938877342,
+      "brier": 0.2511524880720854,
+      "accuracy": 0.5244326824897372
+    },
+    "base_lr": {
+      "n": 95978,
+      "roc_auc": 0.5202572955391795,
+      "pr_auc": 0.48435626066454246,
+      "log_loss": 0.6918177741687935,
+      "brier": 0.24932439718880625,
+      "accuracy": 0.5298714288691159
+    },
+    "struct_rf": {
+      "n": 95978,
+      "roc_auc": 0.5232225609562866,
+      "pr_auc": 0.4851451516048985,
+      "log_loss": 0.6918842937014925,
+      "brier": 0.2493525359616572,
+      "accuracy": 0.5287461709975203
+    },
+    "struct_lr": {
+      "n": 95978,
+      "roc_auc": 0.5194875316514693,
+      "pr_auc": 0.480314585437269,
+      "log_loss": 0.6926246153451575,
+      "brier": 0.24967273488502045,
+      "accuracy": 0.5283294088228553
+    }
+  },
+  "runtime_s": 643.1178357601166,
+  "feature_columns_struct": [
+    "confidence",
+    "stay_prob",
+    "log1p_duration",
+    "margin",
+    "hh_strength",
+    "hl_strength",
+    "lh_strength",
+    "ll_strength",
+    "structure_direction",
+    "structure_consistency",
+    "bos_up",
+    "bos_down",
+    "choch_up",
+    "choch_down",
+    "pullback_ratio",
+    "impulse_strength",
+    "distance_from_last_swing_high",
+    "distance_from_last_swing_low",
+    "trend_structure_age"
+  ]
+}

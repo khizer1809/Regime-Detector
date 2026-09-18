@@ -1,0 +1,7 @@
+horizon,kruskal_stat,p_value,n_groups,note,config,n_states_model
+5m,244.75058772905226,8.936156674527338e-53,4,descriptive only -- large n inflates significance; not proof of tradability,C,4
+15m,126.46625153995923,3.1226551867579972e-27,4,descriptive only -- large n inflates significance; not proof of tradability,C,4
+30m,535.2971572218704,1.0684293347345332e-115,4,descriptive only -- large n inflates significance; not proof of tradability,C,4
+1h,1162.8430636134592,8.451050313050792e-252,4,descriptive only -- large n inflates significance; not proof of tradability,C,4
+2h,1568.3762407731176,0.0,4,descriptive only -- large n inflates significance; not proof of tradability,C,4
+4h,1021.9778430811248,3.0719645220902893e-221,4,descriptive only -- large n inflates significance; not proof of tradability,C,4

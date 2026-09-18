@@ -1,0 +1,18 @@
+{
+  "n_common_rows": 879413,
+  "trend_sign_t_agreement": 0.5994771512361087,
+  "direction_agreement_when_both_trending": 0.8858044841124337,
+  "old_is_trending_rate": 0.2667370166235887,
+  "new_is_trending_rate": 0.3735650939888312,
+  "trending_confusion_matrix": {
+    "false": {
+      "false": 428140,
+      "true": 122755
+    },
+    "true": {
+      "false": 216701,
+      "true": 111817
+    }
+  },
+  "raw_state_index_ARI": 0.0044868379158871895
+}

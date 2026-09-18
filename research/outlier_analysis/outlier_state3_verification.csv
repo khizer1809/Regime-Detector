@@ -1,0 +1,4 @@
+threshold_pct,number_of_observations,state_3_count,state_3_percentage
+0.1,924,924,100.0
+0.5,4619,4619,100.0
+1.0,9238,9238,100.0

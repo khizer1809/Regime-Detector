@@ -1,0 +1,33 @@
+{
+  "drop_col": "ofi_raw",
+  "n_valid_a": 923766,
+  "n_valid_b": 923766,
+  "n_common": 923766,
+  "train_ll_a": -16117494.821965769,
+  "train_ll_b": -14923349.926098626,
+  "train_ll_per_sample_a": -17.44759476097385,
+  "train_ll_per_sample_b": -16.154902785011167,
+  "bic_a": 32237187.438183025,
+  "bic_b": 29848787.756736167,
+  "label_agreement": 0.9792772195556018,
+  "adjusted_rand_index": 0.943045304460048,
+  "distinct_labels_a": [
+    "Downtrend / Mid-Vol",
+    "Ranging / High-Vol",
+    "Ranging / Low-Vol",
+    "Uptrend / Mid-Vol"
+  ],
+  "distinct_labels_b": [
+    "Downtrend / Mid-Vol",
+    "Ranging / High-Vol",
+    "Ranging / Low-Vol",
+    "Uptrend / Mid-Vol"
+  ],
+  "persistence_feature_correlations": {
+    "confidence": 0.7953670453340381,
+    "stay_prob": 0.9631271516922235,
+    "log1p_duration": 0.9470060605921851,
+    "margin": 0.8158116490274117
+  },
+  "runtime_s": 710.3764879703522
+}

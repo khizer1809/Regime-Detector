@@ -1,0 +1,16 @@
+# Production (production/hmm_15m/)
+numpy>=2.0
+pandas>=2.0
+scikit-learn>=1.5
+hmmlearn>=0.3
+requests>=2.32
+
+# Research reproduction (research/) and visualization generation
+scipy>=1.14
+matplotlib>=3.9
+tqdm>=4.66
+pyarrow>=17.0
+
+# Optional: viz/ (local regime viewer app)
+fastapi>=0.110
+uvicorn>=0.30

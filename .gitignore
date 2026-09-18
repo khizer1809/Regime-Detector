@@ -1,19 +1,32 @@
-# Large source feature matrices -- regenerate locally via refresh_features.py
-# (or the original data pipeline). Far over GitHub's 100MB file limit anyway.
+# Large legacy 5m feature matrices (research/abandoned_models/) -- 5m is not
+# part of the current production system. Regenerable via the archived
+# refresh_features.py / features.py pipeline if ever needed again.
 Data/features_out.csv
 Data/features_out_masked.csv
 
-# Persistence gate's historical training table -- regenerate locally via
-# persistence_dataset.py. Also over GitHub's 100MB limit.
-Data/persistence_training_table.csv
-
-# Archived Trend research (Steps 1-8 + V2/V3/V4 walk-forward experiments,
-# 2025-09-14/15): the research SCRIPTS in research_archive/src/ are tracked
-# (small, valuable for reproducibility); the CACHED DATA they produced
-# (101 fold artifacts, master OOS datasets, per-experiment outputs) is not --
-# 2.5GB, far over GitHub's limits, and regenerable by rerunning the archived
-# scripts against the production HMM/feature cache if ever needed again.
+# research_archive/Data/: cached outputs of the earliest (pre-v16) research
+# scripts, 4.1GB. The scripts themselves are tracked under research/; this
+# cache is regenerable by rerunning them and is kept locally, not in git.
 research_archive/Data/
+
+# Large regenerable research caches (per-bar decodes, chart data, full
+# feature parquets). The small summary/report artifacts each experiment
+# produced ARE tracked under research/ -- only the large raw caches are
+# excluded here.
+research/**/*_predictions_oos.csv
+research/**/features_expanded_*.csv
+research/**/master_oos_test_*.csv
+research/**/expanded_hmm_cache/
+research/ml_comparisons/rf_vs_lr/structure_features/
+
+# Viz app: node_modules and build output (regenerate via `npm install`)
+viz/frontend/node_modules/
+viz/frontend/dist/
+
+# Viz app + production: chart/feature caches regenerated on demand by
+# viz/scripts/*.py -- not committed.
+Data/chart/
+Data/persistence_training_table*.csv
 
 # Python
 __pycache__/

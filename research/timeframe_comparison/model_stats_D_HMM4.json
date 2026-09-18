@@ -1,0 +1,62 @@
+{
+  "config": "D",
+  "timeframe": "15m+30m",
+  "n_states_model": 4,
+  "n_features": 1,
+  "feature_columns": [
+    "direction_score(0.6x15m+0.4x30m)"
+  ],
+  "n_valid_bars": 309702,
+  "total_days": 3242.28125,
+  "n_transitions": 12026,
+  "n_segments": 12059,
+  "transitions_per_1k_bars": 38.83087613254031,
+  "transitions_per_day": 3.709116844814126,
+  "mean_duration_minutes": 385.2334356082594,
+  "median_duration_minutes": 120.0,
+  "min_duration_minutes": 15.0,
+  "max_duration_minutes": 28560.0,
+  "mean_segment_bars": 25.682229040550627,
+  "median_segment_bars": 8.0,
+  "min_segment_bars": 1,
+  "max_segment_bars": 1904,
+  "pct_1bar": 4.270669209718882,
+  "pct_gt30m": 83.0748818309976,
+  "pct_gt1h": 66.57268430218095,
+  "pct_gt2h": 46.894435691185,
+  "pct_gt4h": 28.824944025209387,
+  "pct_gt8h": 16.31976117422672,
+  "n_gt1h": 8028,
+  "n_gt2h": 5655,
+  "n_gt4h": 3476,
+  "n_gt8h": 1968,
+  "train_ll": null,
+  "train_ll_per_obs": null,
+  "best_seed": null,
+  "fit_time_s": 0.0,
+  "decode_time_s": 0.0,
+  "distinct_regime_labels": 3,
+  "regime_labels": {
+    "0": "Bearish",
+    "1": "Ranging",
+    "2": "Bullish"
+  },
+  "transmat": [
+    [
+      0.9153980604420388,
+      0.06695421741091565,
+      0.017647722147045557
+    ],
+    [
+      0.009768104782890048,
+      0.9779163014719735,
+      0.012315593745136426
+    ],
+    [
+      0.020487577743040542,
+      0.10034256826420992,
+      0.8791698539927495
+    ]
+  ],
+  "note": "D has no fitted HMM -- transmat above is EMPIRICAL (observed bin-to-bin transition frequencies of the 3-way Bullish/Ranging/Bearish direction_score bin), not a model parameter. train_ll/best_seed are null because nothing was fit."
+}

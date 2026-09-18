@@ -1,0 +1,2477 @@
+{
+  "test_a": {
+    "tag": "A_expanded_hmm_baseline_lr",
+    "oos_roc_auc": 0.5214952293963213,
+    "oos_pr_auc": 0.4786518930804097,
+    "n_eligible": 123928,
+    "positives": 57847,
+    "negatives": 66081,
+    "fold_mean": 0.5027752265965667,
+    "fold_median": 0.5077007221987513,
+    "fold_std": 0.04288826856306107,
+    "folds_above_050": 56,
+    "folds_above_052": 38,
+    "n_computable_folds": 100,
+    "train_metrics": 0.5222309534762355,
+    "full_metrics": {
+      "n": 123928,
+      "positives": 57847,
+      "negatives": 66081,
+      "roc_auc": 0.5214952293963213,
+      "pr_auc": 0.4786518930804097,
+      "brier": 0.24901322574677556,
+      "accuracy": 0.5315505777548254,
+      "precision": 0.4757440824935552,
+      "recall": 0.03509257178418933,
+      "f1": 0.06536368612551116
+    }
+  },
+  "test_b": {
+    "tag": "B_expanded_hmm_expanded_lr",
+    "oos_roc_auc": 0.5313620376627773,
+    "oos_pr_auc": 0.48701220189956274,
+    "n_eligible": 123928,
+    "positives": 57847,
+    "negatives": 66081,
+    "fold_mean": 0.5217320541974176,
+    "fold_median": 0.5234648219295732,
+    "fold_std": 0.04095231301775727,
+    "folds_above_050": 77,
+    "folds_above_052": 53,
+    "n_computable_folds": 100,
+    "train_metrics": 0.5328248682997728,
+    "full_metrics": {
+      "n": 123928,
+      "positives": 57847,
+      "negatives": 66081,
+      "roc_auc": 0.5313620376627773,
+      "pr_auc": 0.48701220189956274,
+      "brier": 0.24911605602749795,
+      "accuracy": 0.5306952423988122,
+      "precision": 0.49154921972028726,
+      "recall": 0.1573633896312687,
+      "f1": 0.2384045255742084
+    }
+  },
+  "fold_metrics_a": [
+    {
+      "fold": 0,
+      "n_eligible": 3732,
+      "pool_train_rows": 0
+    },
+    {
+      "fold": 1,
+      "n_eligible": 2622,
+      "pool_train_rows": 3732,
+      "epsilon": 0.00296925629760212,
+      "fold_auc": 0.4816515454039594
+    },
+    {
+      "fold": 2,
+      "n_eligible": 2426,
+      "pool_train_rows": 6354,
+      "epsilon": 0.00339613662167181,
+      "fold_auc": 0.5009154086530354
+    },
+    {
+      "fold": 3,
+      "n_eligible": 1528,
+      "pool_train_rows": 8780,
+      "epsilon": 0.00363812842832246,
+      "fold_auc": 0.46978294130919146
+    },
+    {
+      "fold": 4,
+      "n_eligible": 1721,
+      "pool_train_rows": 10308,
+      "epsilon": 0.00374833627696557,
+      "fold_auc": 0.5148630746935705
+    },
+    {
+      "fold": 5,
+      "n_eligible": 2053,
+      "pool_train_rows": 12029,
+      "epsilon": 0.0038487374408578,
+      "fold_auc": 0.4915550044703416
+    },
+    {
+      "fold": 6,
+      "n_eligible": 1387,
+      "pool_train_rows": 14082,
+      "epsilon": 0.00394248397923101,
+      "fold_auc": 0.5419479194791949
+    },
+    {
+      "fold": 7,
+      "n_eligible": 723,
+      "pool_train_rows": 15469,
+      "epsilon": 0.00399878465011018,
+      "fold_auc": 0.4519308312655087
+    },
+    {
+      "fold": 8,
+      "n_eligible": 1777,
+      "pool_train_rows": 16192,
+      "epsilon": 0.00402599900428338,
+      "fold_auc": 0.46668037266700035
+    },
+    {
+      "fold": 9,
+      "n_eligible": 2476,
+      "pool_train_rows": 17969,
+      "epsilon": 0.0040844235724392195,
+      "fold_auc": 0.518732119899948
+    },
+    {
+      "fold": 10,
+      "n_eligible": 478,
+      "pool_train_rows": 20445,
+      "epsilon": 0.00416573306614928,
+      "fold_auc": 0.5583603896103896
+    },
+    {
+      "fold": 11,
+      "n_eligible": 349,
+      "pool_train_rows": 20923,
+      "epsilon": 0.004179169907904121,
+      "fold_auc": 0.5097858701582105
+    },
+    {
+      "fold": 12,
+      "n_eligible": 355,
+      "pool_train_rows": 21272,
+      "epsilon": 0.00419064308739748,
+      "fold_auc": 0.43053408065970883
+    },
+    {
+      "fold": 13,
+      "n_eligible": 729,
+      "pool_train_rows": 21627,
+      "epsilon": 0.00419971169596984,
+      "fold_auc": 0.5891158900836321
+    },
+    {
+      "fold": 14,
+      "n_eligible": 1047,
+      "pool_train_rows": 22356,
+      "epsilon": 0.00422352267045935,
+      "fold_auc": 0.5513502454991817
+    },
+    {
+      "fold": 15,
+      "n_eligible": 1183,
+      "pool_train_rows": 23403,
+      "epsilon": 0.00424663693234988,
+      "fold_auc": 0.5547776454646244
+    },
+    {
+      "fold": 16,
+      "n_eligible": 1400,
+      "pool_train_rows": 24586,
+      "epsilon": 0.004279280012635649,
+      "fold_auc": 0.5049083981418654
+    },
+    {
+      "fold": 17,
+      "n_eligible": 980,
+      "pool_train_rows": 25986,
+      "epsilon": 0.004309990235388,
+      "fold_auc": 0.5101531680440772
+    },
+    {
+      "fold": 18,
+      "n_eligible": 708,
+      "pool_train_rows": 26966,
+      "epsilon": 0.0043362377504765,
+      "fold_auc": 0.5532102559099925
+    },
+    {
+      "fold": 19,
+      "n_eligible": 646,
+      "pool_train_rows": 27674,
+      "epsilon": 0.004354980852721861,
+      "fold_auc": 0.5523256376748462
+    },
+    {
+      "fold": 20,
+      "n_eligible": 1155,
+      "pool_train_rows": 28320,
+      "epsilon": 0.00437036717977592,
+      "fold_auc": 0.44506863045187467
+    },
+    {
+      "fold": 21,
+      "n_eligible": 1014,
+      "pool_train_rows": 29475,
+      "epsilon": 0.00439392685833012,
+      "fold_auc": 0.5520203275609689
+    },
+    {
+      "fold": 22,
+      "n_eligible": 1217,
+      "pool_train_rows": 30489,
+      "epsilon": 0.00441489183057504,
+      "fold_auc": 0.5484270548751444
+    },
+    {
+      "fold": 23,
+      "n_eligible": 1166,
+      "pool_train_rows": 31706,
+      "epsilon": 0.0044386274063139,
+      "fold_auc": 0.5343416649624024
+    },
+    {
+      "fold": 24,
+      "n_eligible": 2723,
+      "pool_train_rows": 32872,
+      "epsilon": 0.00445760633283401,
+      "fold_auc": 0.49831713033996905
+    },
+    {
+      "fold": 25,
+      "n_eligible": 1422,
+      "pool_train_rows": 35595,
+      "epsilon": 0.00450557119215844,
+      "fold_auc": 0.501391162192209
+    },
+    {
+      "fold": 26,
+      "n_eligible": 1655,
+      "pool_train_rows": 37017,
+      "epsilon": 0.00453157109545358,
+      "fold_auc": 0.529228729281768
+    },
+    {
+      "fold": 27,
+      "n_eligible": 831,
+      "pool_train_rows": 38672,
+      "epsilon": 0.00455819546789632,
+      "fold_auc": 0.5335956917978459
+    },
+    {
+      "fold": 28,
+      "n_eligible": 589,
+      "pool_train_rows": 39503,
+      "epsilon": 0.004572559289474021,
+      "fold_auc": 0.5017495075889237
+    },
+    {
+      "fold": 29,
+      "n_eligible": 1116,
+      "pool_train_rows": 40092,
+      "epsilon": 0.00458248022041285,
+      "fold_auc": 0.5117228215551387
+    },
+    {
+      "fold": 30,
+      "n_eligible": 350,
+      "pool_train_rows": 41208,
+      "epsilon": 0.00459646007611238,
+      "fold_auc": 0.5691626645757784
+    },
+    {
+      "fold": 31,
+      "n_eligible": 339,
+      "pool_train_rows": 41558,
+      "epsilon": 0.0046025548296954105,
+      "fold_auc": 0.5348738903762152
+    },
+    {
+      "fold": 32,
+      "n_eligible": 820,
+      "pool_train_rows": 41897,
+      "epsilon": 0.00460694537346594,
+      "fold_auc": 0.4450168434633028
+    },
+    {
+      "fold": 33,
+      "n_eligible": 911,
+      "pool_train_rows": 42717,
+      "epsilon": 0.0046188796353959,
+      "fold_auc": 0.550335667573355
+    },
+    {
+      "fold": 34,
+      "n_eligible": 1910,
+      "pool_train_rows": 43628,
+      "epsilon": 0.00463417959675192,
+      "fold_auc": 0.5112857081716033
+    },
+    {
+      "fold": 35,
+      "n_eligible": 1266,
+      "pool_train_rows": 45538,
+      "epsilon": 0.0046606474963944,
+      "fold_auc": 0.49787257584292266
+    },
+    {
+      "fold": 36,
+      "n_eligible": 1075,
+      "pool_train_rows": 46804,
+      "epsilon": 0.00467586361863182,
+      "fold_auc": 0.5334417479776499
+    },
+    {
+      "fold": 37,
+      "n_eligible": 679,
+      "pool_train_rows": 47879,
+      "epsilon": 0.0046910646877851,
+      "fold_auc": 0.4974214700664417
+    },
+    {
+      "fold": 38,
+      "n_eligible": 1583,
+      "pool_train_rows": 48558,
+      "epsilon": 0.00469875191852857,
+      "fold_auc": 0.5392520475969711
+    },
+    {
+      "fold": 39,
+      "n_eligible": 1148,
+      "pool_train_rows": 50141,
+      "epsilon": 0.0047210360763685,
+      "fold_auc": 0.495887793319575
+    },
+    {
+      "fold": 40,
+      "n_eligible": 1895,
+      "pool_train_rows": 51289,
+      "epsilon": 0.0047354716911531,
+      "fold_auc": 0.45346326143874005
+    },
+    {
+      "fold": 41,
+      "n_eligible": 2146,
+      "pool_train_rows": 53184,
+      "epsilon": 0.0047587540375061705,
+      "fold_auc": 0.45009035759703553
+    },
+    {
+      "fold": 42,
+      "n_eligible": 2006,
+      "pool_train_rows": 55330,
+      "epsilon": 0.00478568938640466,
+      "fold_auc": 0.4884750998047615
+    },
+    {
+      "fold": 43,
+      "n_eligible": 1886,
+      "pool_train_rows": 57336,
+      "epsilon": 0.004812956093515701,
+      "fold_auc": 0.4817773078912515
+    },
+    {
+      "fold": 44,
+      "n_eligible": 1944,
+      "pool_train_rows": 59222,
+      "epsilon": 0.00483785098886318,
+      "fold_auc": 0.5289869510507244
+    },
+    {
+      "fold": 45,
+      "n_eligible": 2028,
+      "pool_train_rows": 61166,
+      "epsilon": 0.0048588906097819,
+      "fold_auc": 0.5267619542413415
+    },
+    {
+      "fold": 46,
+      "n_eligible": 2257,
+      "pool_train_rows": 63194,
+      "epsilon": 0.00487951283087481,
+      "fold_auc": 0.5435969375624138
+    },
+    {
+      "fold": 47,
+      "n_eligible": 1855,
+      "pool_train_rows": 65451,
+      "epsilon": 0.0049038565736534,
+      "fold_auc": 0.47973265321396164
+    },
+    {
+      "fold": 48,
+      "n_eligible": 1605,
+      "pool_train_rows": 67306,
+      "epsilon": 0.00492236405186205,
+      "fold_auc": 0.49459643300759915
+    },
+    {
+      "fold": 49,
+      "n_eligible": 1317,
+      "pool_train_rows": 68911,
+      "epsilon": 0.0049366855402279,
+      "fold_auc": 0.567340875567059
+    },
+    {
+      "fold": 50,
+      "n_eligible": 2198,
+      "pool_train_rows": 70228,
+      "epsilon": 0.00495195515642958,
+      "fold_auc": 0.464923011760016
+    },
+    {
+      "fold": 51,
+      "n_eligible": 2589,
+      "pool_train_rows": 72426,
+      "epsilon": 0.00497471088105865,
+      "fold_auc": 0.5206294439352825
+    },
+    {
+      "fold": 52,
+      "n_eligible": 1927,
+      "pool_train_rows": 75015,
+      "epsilon": 0.00499935231892112,
+      "fold_auc": 0.5300154571200034
+    },
+    {
+      "fold": 53,
+      "n_eligible": 1328,
+      "pool_train_rows": 76942,
+      "epsilon": 0.005016199134237361,
+      "fold_auc": 0.5016556704727796
+    },
+    {
+      "fold": 54,
+      "n_eligible": 1457,
+      "pool_train_rows": 78270,
+      "epsilon": 0.00503047597541655,
+      "fold_auc": 0.48426669116324295
+    },
+    {
+      "fold": 55,
+      "n_eligible": 596,
+      "pool_train_rows": 79727,
+      "epsilon": 0.00504238626438246,
+      "fold_auc": 0.5077523313374604
+    },
+    {
+      "fold": 56,
+      "n_eligible": 1344,
+      "pool_train_rows": 80323,
+      "epsilon": 0.00504692607214344,
+      "fold_auc": 0.5091015572709829
+    },
+    {
+      "fold": 57,
+      "n_eligible": 286,
+      "pool_train_rows": 81667,
+      "epsilon": 0.00505767455909622,
+      "fold_auc": 0.5641627543035994
+    },
+    {
+      "fold": 58,
+      "n_eligible": 722,
+      "pool_train_rows": 81953,
+      "epsilon": 0.00506016606143932,
+      "fold_auc": 0.4651081593345457
+    },
+    {
+      "fold": 59,
+      "n_eligible": 851,
+      "pool_train_rows": 82675,
+      "epsilon": 0.00506622995121112,
+      "fold_auc": 0.5113632596227166
+    },
+    {
+      "fold": 60,
+      "n_eligible": 1242,
+      "pool_train_rows": 83526,
+      "epsilon": 0.0050733329457477005,
+      "fold_auc": 0.5572519777649114
+    },
+    {
+      "fold": 61,
+      "n_eligible": 694,
+      "pool_train_rows": 84768,
+      "epsilon": 0.00508429823240962,
+      "fold_auc": 0.4964294086129529
+    },
+    {
+      "fold": 62,
+      "n_eligible": 648,
+      "pool_train_rows": 85462,
+      "epsilon": 0.005089687513524,
+      "fold_auc": 0.4655188845578354
+    },
+    {
+      "fold": 63,
+      "n_eligible": 648,
+      "pool_train_rows": 86110,
+      "epsilon": 0.00509492216349153,
+      "fold_auc": 0.5374649021092275
+    },
+    {
+      "fold": 64,
+      "n_eligible": 312,
+      "pool_train_rows": 86758,
+      "epsilon": 0.00509944120054119,
+      "fold_auc": 0.4352832018894184
+    },
+    {
+      "fold": 65,
+      "n_eligible": 409,
+      "pool_train_rows": 87070,
+      "epsilon": 0.00510278818643811,
+      "fold_auc": 0.4303497332542976
+    },
+    {
+      "fold": 66,
+      "n_eligible": 321,
+      "pool_train_rows": 87479,
+      "epsilon": 0.00510585757941866,
+      "fold_auc": 0.5402361348454249
+    },
+    {
+      "fold": 67,
+      "n_eligible": 703,
+      "pool_train_rows": 87800,
+      "epsilon": 0.00510818896769523,
+      "fold_auc": 0.5779585654255839
+    },
+    {
+      "fold": 68,
+      "n_eligible": 745,
+      "pool_train_rows": 88503,
+      "epsilon": 0.005114399725928079,
+      "fold_auc": 0.5149887123382826
+    },
+    {
+      "fold": 69,
+      "n_eligible": 973,
+      "pool_train_rows": 89248,
+      "epsilon": 0.00512062082590933,
+      "fold_auc": 0.5486093956301377
+    },
+    {
+      "fold": 70,
+      "n_eligible": 1542,
+      "pool_train_rows": 90221,
+      "epsilon": 0.0051282115635142,
+      "fold_auc": 0.5236166340904496
+    },
+    {
+      "fold": 71,
+      "n_eligible": 1141,
+      "pool_train_rows": 91763,
+      "epsilon": 0.00514041877990716,
+      "fold_auc": 0.42895567284269576
+    },
+    {
+      "fold": 72,
+      "n_eligible": 1842,
+      "pool_train_rows": 92904,
+      "epsilon": 0.0051476406487738005,
+      "fold_auc": 0.49212067221807393
+    },
+    {
+      "fold": 73,
+      "n_eligible": 1610,
+      "pool_train_rows": 94746,
+      "epsilon": 0.005161882385754799,
+      "fold_auc": 0.5193329462034357
+    },
+    {
+      "fold": 74,
+      "n_eligible": 1326,
+      "pool_train_rows": 96356,
+      "epsilon": 0.005172421265773251,
+      "fold_auc": 0.4570755575785162
+    },
+    {
+      "fold": 75,
+      "n_eligible": 813,
+      "pool_train_rows": 97682,
+      "epsilon": 0.0051813342322279705,
+      "fold_auc": 0.4530504545177232
+    },
+    {
+      "fold": 76,
+      "n_eligible": 1591,
+      "pool_train_rows": 98495,
+      "epsilon": 0.0051867979353186,
+      "fold_auc": 0.4595596491616507
+    },
+    {
+      "fold": 77,
+      "n_eligible": 1567,
+      "pool_train_rows": 100086,
+      "epsilon": 0.00519549934797495,
+      "fold_auc": 0.5289275589011633
+    },
+    {
+      "fold": 78,
+      "n_eligible": 1263,
+      "pool_train_rows": 101653,
+      "epsilon": 0.00520552896418948,
+      "fold_auc": 0.495796031634517
+    },
+    {
+      "fold": 79,
+      "n_eligible": 1174,
+      "pool_train_rows": 102916,
+      "epsilon": 0.00521234050732025,
+      "fold_auc": 0.4198656188488804
+    },
+    {
+      "fold": 80,
+      "n_eligible": 1813,
+      "pool_train_rows": 104090,
+      "epsilon": 0.00522050320798888,
+      "fold_auc": 0.3974623146788253
+    },
+    {
+      "fold": 81,
+      "n_eligible": 1644,
+      "pool_train_rows": 105903,
+      "epsilon": 0.00523144944816526,
+      "fold_auc": 0.5488343294028967
+    },
+    {
+      "fold": 82,
+      "n_eligible": 1439,
+      "pool_train_rows": 107547,
+      "epsilon": 0.00524134889579416,
+      "fold_auc": 0.4759220934955418
+    },
+    {
+      "fold": 83,
+      "n_eligible": 1303,
+      "pool_train_rows": 108986,
+      "epsilon": 0.005248702133942,
+      "fold_auc": 0.5444049419714169
+    },
+    {
+      "fold": 84,
+      "n_eligible": 1581,
+      "pool_train_rows": 110289,
+      "epsilon": 0.00525692717109996,
+      "fold_auc": 0.5112472178187699
+    },
+    {
+      "fold": 85,
+      "n_eligible": 1342,
+      "pool_train_rows": 111870,
+      "epsilon": 0.005265866586708121,
+      "fold_auc": 0.4448926797639022
+    },
+    {
+      "fold": 86,
+      "n_eligible": 1161,
+      "pool_train_rows": 113212,
+      "epsilon": 0.005273737647275701,
+      "fold_auc": 0.4572182519510809
+    },
+    {
+      "fold": 87,
+      "n_eligible": 889,
+      "pool_train_rows": 114373,
+      "epsilon": 0.00527962690127872,
+      "fold_auc": 0.5291711161962879
+    },
+    {
+      "fold": 88,
+      "n_eligible": 898,
+      "pool_train_rows": 115262,
+      "epsilon": 0.00528480919956202,
+      "fold_auc": 0.5076491130600421
+    },
+    {
+      "fold": 89,
+      "n_eligible": 798,
+      "pool_train_rows": 116160,
+      "epsilon": 0.00528960146360133,
+      "fold_auc": 0.5749479746254488
+    },
+    {
+      "fold": 90,
+      "n_eligible": 444,
+      "pool_train_rows": 116958,
+      "epsilon": 0.00529363843212435,
+      "fold_auc": 0.5402351364522417
+    },
+    {
+      "fold": 91,
+      "n_eligible": 1029,
+      "pool_train_rows": 117402,
+      "epsilon": 0.00529611732830351,
+      "fold_auc": 0.48980209405071723
+    },
+    {
+      "fold": 92,
+      "n_eligible": 1350,
+      "pool_train_rows": 118431,
+      "epsilon": 0.0053007755345486,
+      "fold_auc": 0.46302090662820156
+    },
+    {
+      "fold": 93,
+      "n_eligible": 876,
+      "pool_train_rows": 119781,
+      "epsilon": 0.0053088561958443,
+      "fold_auc": 0.5466832983193277
+    },
+    {
+      "fold": 94,
+      "n_eligible": 793,
+      "pool_train_rows": 120657,
+      "epsilon": 0.0053137384349877005,
+      "fold_auc": 0.43734574968831896
+    },
+    {
+      "fold": 95,
+      "n_eligible": 1699,
+      "pool_train_rows": 121450,
+      "epsilon": 0.005316888580019861,
+      "fold_auc": 0.47061750365202254
+    },
+    {
+      "fold": 96,
+      "n_eligible": 1323,
+      "pool_train_rows": 123149,
+      "epsilon": 0.0053244107186561,
+      "fold_auc": 0.4905879830126845
+    },
+    {
+      "fold": 97,
+      "n_eligible": 718,
+      "pool_train_rows": 124472,
+      "epsilon": 0.0053321183623161105,
+      "fold_auc": 0.5434485702091336
+    },
+    {
+      "fold": 98,
+      "n_eligible": 622,
+      "pool_train_rows": 125190,
+      "epsilon": 0.005335494486882131,
+      "fold_auc": 0.4358758821087588
+    },
+    {
+      "fold": 99,
+      "n_eligible": 1258,
+      "pool_train_rows": 125812,
+      "epsilon": 0.00533925085468545,
+      "fold_auc": 0.4280975837539748
+    },
+    {
+      "fold": 100,
+      "n_eligible": 590,
+      "pool_train_rows": 127070,
+      "epsilon": 0.005344518804763941,
+      "fold_auc": 0.400872110038045
+    }
+  ],
+  "fold_metrics_b": [
+    {
+      "fold": 0,
+      "n_eligible": 3732,
+      "pool_train_rows": 0
+    },
+    {
+      "fold": 1,
+      "n_eligible": 2622,
+      "pool_train_rows": 3732,
+      "epsilon": 0.00296925629760212,
+      "fold_auc": 0.522799729810957
+    },
+    {
+      "fold": 2,
+      "n_eligible": 2426,
+      "pool_train_rows": 6354,
+      "epsilon": 0.00339613662167181,
+      "fold_auc": 0.6135486100963322
+    },
+    {
+      "fold": 3,
+      "n_eligible": 1528,
+      "pool_train_rows": 8780,
+      "epsilon": 0.00363812842832246,
+      "fold_auc": 0.5067123558112644
+    },
+    {
+      "fold": 4,
+      "n_eligible": 1721,
+      "pool_train_rows": 10308,
+      "epsilon": 0.00374833627696557,
+      "fold_auc": 0.5090573697951237
+    },
+    {
+      "fold": 5,
+      "n_eligible": 2053,
+      "pool_train_rows": 12029,
+      "epsilon": 0.0038487374408578,
+      "fold_auc": 0.5319619789739796
+    },
+    {
+      "fold": 6,
+      "n_eligible": 1387,
+      "pool_train_rows": 14082,
+      "epsilon": 0.00394248397923101,
+      "fold_auc": 0.5462840342689141
+    },
+    {
+      "fold": 7,
+      "n_eligible": 723,
+      "pool_train_rows": 15469,
+      "epsilon": 0.00399878465011018,
+      "fold_auc": 0.5528923697270471
+    },
+    {
+      "fold": 8,
+      "n_eligible": 1777,
+      "pool_train_rows": 16192,
+      "epsilon": 0.00402599900428338,
+      "fold_auc": 0.5458950954652719
+    },
+    {
+      "fold": 9,
+      "n_eligible": 2476,
+      "pool_train_rows": 17969,
+      "epsilon": 0.0040844235724392195,
+      "fold_auc": 0.5305159255641906
+    },
+    {
+      "fold": 10,
+      "n_eligible": 478,
+      "pool_train_rows": 20445,
+      "epsilon": 0.00416573306614928,
+      "fold_auc": 0.5260281385281385
+    },
+    {
+      "fold": 11,
+      "n_eligible": 349,
+      "pool_train_rows": 20923,
+      "epsilon": 0.004179169907904121,
+      "fold_auc": 0.5771958537915984
+    },
+    {
+      "fold": 12,
+      "n_eligible": 355,
+      "pool_train_rows": 21272,
+      "epsilon": 0.00419064308739748,
+      "fold_auc": 0.6511403169694627
+    },
+    {
+      "fold": 13,
+      "n_eligible": 729,
+      "pool_train_rows": 21627,
+      "epsilon": 0.00419971169596984,
+      "fold_auc": 0.5143289526085225
+    },
+    {
+      "fold": 14,
+      "n_eligible": 1047,
+      "pool_train_rows": 22356,
+      "epsilon": 0.00422352267045935,
+      "fold_auc": 0.5802864907881501
+    },
+    {
+      "fold": 15,
+      "n_eligible": 1183,
+      "pool_train_rows": 23403,
+      "epsilon": 0.00424663693234988,
+      "fold_auc": 0.5841404109789935
+    },
+    {
+      "fold": 16,
+      "n_eligible": 1400,
+      "pool_train_rows": 24586,
+      "epsilon": 0.004279280012635649,
+      "fold_auc": 0.583715225220523
+    },
+    {
+      "fold": 17,
+      "n_eligible": 980,
+      "pool_train_rows": 25986,
+      "epsilon": 0.004309990235388,
+      "fold_auc": 0.5471250688705234
+    },
+    {
+      "fold": 18,
+      "n_eligible": 708,
+      "pool_train_rows": 26966,
+      "epsilon": 0.0043362377504765,
+      "fold_auc": 0.5359639709946997
+    },
+    {
+      "fold": 19,
+      "n_eligible": 646,
+      "pool_train_rows": 27674,
+      "epsilon": 0.004354980852721861,
+      "fold_auc": 0.5285320168433281
+    },
+    {
+      "fold": 20,
+      "n_eligible": 1155,
+      "pool_train_rows": 28320,
+      "epsilon": 0.00437036717977592,
+      "fold_auc": 0.440747342708127
+    },
+    {
+      "fold": 21,
+      "n_eligible": 1014,
+      "pool_train_rows": 29475,
+      "epsilon": 0.00439392685833012,
+      "fold_auc": 0.5421840291340665
+    },
+    {
+      "fold": 22,
+      "n_eligible": 1217,
+      "pool_train_rows": 30489,
+      "epsilon": 0.00441489183057504,
+      "fold_auc": 0.5675824386398104
+    },
+    {
+      "fold": 23,
+      "n_eligible": 1166,
+      "pool_train_rows": 31706,
+      "epsilon": 0.0044386274063139,
+      "fold_auc": 0.5303255292851872
+    },
+    {
+      "fold": 24,
+      "n_eligible": 2723,
+      "pool_train_rows": 32872,
+      "epsilon": 0.00445760633283401,
+      "fold_auc": 0.5191225790725663
+    },
+    {
+      "fold": 25,
+      "n_eligible": 1422,
+      "pool_train_rows": 35595,
+      "epsilon": 0.00450557119215844,
+      "fold_auc": 0.5321697555969668
+    },
+    {
+      "fold": 26,
+      "n_eligible": 1655,
+      "pool_train_rows": 37017,
+      "epsilon": 0.00453157109545358,
+      "fold_auc": 0.6245834254143647
+    },
+    {
+      "fold": 27,
+      "n_eligible": 831,
+      "pool_train_rows": 38672,
+      "epsilon": 0.00455819546789632,
+      "fold_auc": 0.4943898686235057
+    },
+    {
+      "fold": 28,
+      "n_eligible": 589,
+      "pool_train_rows": 39503,
+      "epsilon": 0.004572559289474021,
+      "fold_auc": 0.556378171706639
+    },
+    {
+      "fold": 29,
+      "n_eligible": 1116,
+      "pool_train_rows": 40092,
+      "epsilon": 0.00458248022041285,
+      "fold_auc": 0.5078401865749427
+    },
+    {
+      "fold": 30,
+      "n_eligible": 350,
+      "pool_train_rows": 41208,
+      "epsilon": 0.00459646007611238,
+      "fold_auc": 0.4788787611486818
+    },
+    {
+      "fold": 31,
+      "n_eligible": 339,
+      "pool_train_rows": 41558,
+      "epsilon": 0.0046025548296954105,
+      "fold_auc": 0.5241299140481893
+    },
+    {
+      "fold": 32,
+      "n_eligible": 820,
+      "pool_train_rows": 41897,
+      "epsilon": 0.00460694537346594,
+      "fold_auc": 0.5418159881498471
+    },
+    {
+      "fold": 33,
+      "n_eligible": 911,
+      "pool_train_rows": 42717,
+      "epsilon": 0.0046188796353959,
+      "fold_auc": 0.551739105272296
+    },
+    {
+      "fold": 34,
+      "n_eligible": 1910,
+      "pool_train_rows": 43628,
+      "epsilon": 0.00463417959675192,
+      "fold_auc": 0.5622892297427355
+    },
+    {
+      "fold": 35,
+      "n_eligible": 1266,
+      "pool_train_rows": 45538,
+      "epsilon": 0.0046606474963944,
+      "fold_auc": 0.5137603605053512
+    },
+    {
+      "fold": 36,
+      "n_eligible": 1075,
+      "pool_train_rows": 46804,
+      "epsilon": 0.00467586361863182,
+      "fold_auc": 0.5120263808967838
+    },
+    {
+      "fold": 37,
+      "n_eligible": 679,
+      "pool_train_rows": 47879,
+      "epsilon": 0.0046910646877851,
+      "fold_auc": 0.5045309075729641
+    },
+    {
+      "fold": 38,
+      "n_eligible": 1583,
+      "pool_train_rows": 48558,
+      "epsilon": 0.00469875191852857,
+      "fold_auc": 0.506096108277958
+    },
+    {
+      "fold": 39,
+      "n_eligible": 1148,
+      "pool_train_rows": 50141,
+      "epsilon": 0.0047210360763685,
+      "fold_auc": 0.5523931819918979
+    },
+    {
+      "fold": 40,
+      "n_eligible": 1895,
+      "pool_train_rows": 51289,
+      "epsilon": 0.0047354716911531,
+      "fold_auc": 0.48692460330746373
+    },
+    {
+      "fold": 41,
+      "n_eligible": 2146,
+      "pool_train_rows": 53184,
+      "epsilon": 0.0047587540375061705,
+      "fold_auc": 0.5154920468799031
+    },
+    {
+      "fold": 42,
+      "n_eligible": 2006,
+      "pool_train_rows": 55330,
+      "epsilon": 0.00478568938640466,
+      "fold_auc": 0.5397445520617609
+    },
+    {
+      "fold": 43,
+      "n_eligible": 1886,
+      "pool_train_rows": 57336,
+      "epsilon": 0.004812956093515701,
+      "fold_auc": 0.5661442968470236
+    },
+    {
+      "fold": 44,
+      "n_eligible": 1944,
+      "pool_train_rows": 59222,
+      "epsilon": 0.00483785098886318,
+      "fold_auc": 0.49301736841039784
+    },
+    {
+      "fold": 45,
+      "n_eligible": 2028,
+      "pool_train_rows": 61166,
+      "epsilon": 0.0048588906097819,
+      "fold_auc": 0.5139034856374604
+    },
+    {
+      "fold": 46,
+      "n_eligible": 2257,
+      "pool_train_rows": 63194,
+      "epsilon": 0.00487951283087481,
+      "fold_auc": 0.5301298207237624
+    },
+    {
+      "fold": 47,
+      "n_eligible": 1855,
+      "pool_train_rows": 65451,
+      "epsilon": 0.0049038565736534,
+      "fold_auc": 0.5377749244571675
+    },
+    {
+      "fold": 48,
+      "n_eligible": 1605,
+      "pool_train_rows": 67306,
+      "epsilon": 0.00492236405186205,
+      "fold_auc": 0.5305333055229544
+    },
+    {
+      "fold": 49,
+      "n_eligible": 1317,
+      "pool_train_rows": 68911,
+      "epsilon": 0.0049366855402279,
+      "fold_auc": 0.483635300993571
+    },
+    {
+      "fold": 50,
+      "n_eligible": 2198,
+      "pool_train_rows": 70228,
+      "epsilon": 0.00495195515642958,
+      "fold_auc": 0.5107742010497641
+    },
+    {
+      "fold": 51,
+      "n_eligible": 2589,
+      "pool_train_rows": 72426,
+      "epsilon": 0.00497471088105865,
+      "fold_auc": 0.45911669392180476
+    },
+    {
+      "fold": 52,
+      "n_eligible": 1927,
+      "pool_train_rows": 75015,
+      "epsilon": 0.00499935231892112,
+      "fold_auc": 0.5065352271007632
+    },
+    {
+      "fold": 53,
+      "n_eligible": 1328,
+      "pool_train_rows": 76942,
+      "epsilon": 0.005016199134237361,
+      "fold_auc": 0.49262721654444885
+    },
+    {
+      "fold": 54,
+      "n_eligible": 1457,
+      "pool_train_rows": 78270,
+      "epsilon": 0.00503047597541655,
+      "fold_auc": 0.5780503021882332
+    },
+    {
+      "fold": 55,
+      "n_eligible": 596,
+      "pool_train_rows": 79727,
+      "epsilon": 0.00504238626438246,
+      "fold_auc": 0.5353337167213559
+    },
+    {
+      "fold": 56,
+      "n_eligible": 1344,
+      "pool_train_rows": 80323,
+      "epsilon": 0.00504692607214344,
+      "fold_auc": 0.5139061175315693
+    },
+    {
+      "fold": 57,
+      "n_eligible": 286,
+      "pool_train_rows": 81667,
+      "epsilon": 0.00505767455909622,
+      "fold_auc": 0.5142801251956182
+    },
+    {
+      "fold": 58,
+      "n_eligible": 722,
+      "pool_train_rows": 81953,
+      "epsilon": 0.00506016606143932,
+      "fold_auc": 0.5625129491931214
+    },
+    {
+      "fold": 59,
+      "n_eligible": 851,
+      "pool_train_rows": 82675,
+      "epsilon": 0.00506622995121112,
+      "fold_auc": 0.5216766678822841
+    },
+    {
+      "fold": 60,
+      "n_eligible": 1242,
+      "pool_train_rows": 83526,
+      "epsilon": 0.0050733329457477005,
+      "fold_auc": 0.5585618332264506
+    },
+    {
+      "fold": 61,
+      "n_eligible": 694,
+      "pool_train_rows": 84768,
+      "epsilon": 0.00508429823240962,
+      "fold_auc": 0.5158730158730158
+    },
+    {
+      "fold": 62,
+      "n_eligible": 648,
+      "pool_train_rows": 85462,
+      "epsilon": 0.005089687513524,
+      "fold_auc": 0.46540928455021113
+    },
+    {
+      "fold": 63,
+      "n_eligible": 648,
+      "pool_train_rows": 86110,
+      "epsilon": 0.00509492216349153,
+      "fold_auc": 0.5371582447700548
+    },
+    {
+      "fold": 64,
+      "n_eligible": 312,
+      "pool_train_rows": 86758,
+      "epsilon": 0.00509944120054119,
+      "fold_auc": 0.39850702205727295
+    },
+    {
+      "fold": 65,
+      "n_eligible": 409,
+      "pool_train_rows": 87070,
+      "epsilon": 0.00510278818643811,
+      "fold_auc": 0.40525587828492393
+    },
+    {
+      "fold": 66,
+      "n_eligible": 321,
+      "pool_train_rows": 87479,
+      "epsilon": 0.00510585757941866,
+      "fold_auc": 0.5295556936461085
+    },
+    {
+      "fold": 67,
+      "n_eligible": 703,
+      "pool_train_rows": 87800,
+      "epsilon": 0.00510818896769523,
+      "fold_auc": 0.5571272679891853
+    },
+    {
+      "fold": 68,
+      "n_eligible": 745,
+      "pool_train_rows": 88503,
+      "epsilon": 0.005114399725928079,
+      "fold_auc": 0.5438265173222193
+    },
+    {
+      "fold": 69,
+      "n_eligible": 973,
+      "pool_train_rows": 89248,
+      "epsilon": 0.00512062082590933,
+      "fold_auc": 0.5028578729928873
+    },
+    {
+      "fold": 70,
+      "n_eligible": 1542,
+      "pool_train_rows": 90221,
+      "epsilon": 0.0051282115635142,
+      "fold_auc": 0.550588056884815
+    },
+    {
+      "fold": 71,
+      "n_eligible": 1141,
+      "pool_train_rows": 91763,
+      "epsilon": 0.00514041877990716,
+      "fold_auc": 0.515633842671194
+    },
+    {
+      "fold": 72,
+      "n_eligible": 1842,
+      "pool_train_rows": 92904,
+      "epsilon": 0.0051476406487738005,
+      "fold_auc": 0.4875306004782654
+    },
+    {
+      "fold": 73,
+      "n_eligible": 1610,
+      "pool_train_rows": 94746,
+      "epsilon": 0.005161882385754799,
+      "fold_auc": 0.5289136348392065
+    },
+    {
+      "fold": 74,
+      "n_eligible": 1326,
+      "pool_train_rows": 96356,
+      "epsilon": 0.005172421265773251,
+      "fold_auc": 0.47682976786527076
+    },
+    {
+      "fold": 75,
+      "n_eligible": 813,
+      "pool_train_rows": 97682,
+      "epsilon": 0.0051813342322279705,
+      "fold_auc": 0.5157525471295223
+    },
+    {
+      "fold": 76,
+      "n_eligible": 1591,
+      "pool_train_rows": 98495,
+      "epsilon": 0.0051867979353186,
+      "fold_auc": 0.5545741514500707
+    },
+    {
+      "fold": 77,
+      "n_eligible": 1567,
+      "pool_train_rows": 100086,
+      "epsilon": 0.00519549934797495,
+      "fold_auc": 0.5197722162479226
+    },
+    {
+      "fold": 78,
+      "n_eligible": 1263,
+      "pool_train_rows": 101653,
+      "epsilon": 0.00520552896418948,
+      "fold_auc": 0.5328388767337763
+    },
+    {
+      "fold": 79,
+      "n_eligible": 1174,
+      "pool_train_rows": 102916,
+      "epsilon": 0.00521234050732025,
+      "fold_auc": 0.511465316935281
+    },
+    {
+      "fold": 80,
+      "n_eligible": 1813,
+      "pool_train_rows": 104090,
+      "epsilon": 0.00522050320798888,
+      "fold_auc": 0.5362470802857484
+    },
+    {
+      "fold": 81,
+      "n_eligible": 1644,
+      "pool_train_rows": 105903,
+      "epsilon": 0.00523144944816526,
+      "fold_auc": 0.525097662676406
+    },
+    {
+      "fold": 82,
+      "n_eligible": 1439,
+      "pool_train_rows": 107547,
+      "epsilon": 0.00524134889579416,
+      "fold_auc": 0.49189602150745604
+    },
+    {
+      "fold": 83,
+      "n_eligible": 1303,
+      "pool_train_rows": 108986,
+      "epsilon": 0.005248702133942,
+      "fold_auc": 0.5193169449117203
+    },
+    {
+      "fold": 84,
+      "n_eligible": 1581,
+      "pool_train_rows": 110289,
+      "epsilon": 0.00525692717109996,
+      "fold_auc": 0.5191430081183648
+    },
+    {
+      "fold": 85,
+      "n_eligible": 1342,
+      "pool_train_rows": 111870,
+      "epsilon": 0.005265866586708121,
+      "fold_auc": 0.4838178508323362
+    },
+    {
+      "fold": 86,
+      "n_eligible": 1161,
+      "pool_train_rows": 113212,
+      "epsilon": 0.005273737647275701,
+      "fold_auc": 0.544804592889394
+    },
+    {
+      "fold": 87,
+      "n_eligible": 889,
+      "pool_train_rows": 114373,
+      "epsilon": 0.00527962690127872,
+      "fold_auc": 0.5073226544622426
+    },
+    {
+      "fold": 88,
+      "n_eligible": 898,
+      "pool_train_rows": 115262,
+      "epsilon": 0.00528480919956202,
+      "fold_auc": 0.525839319020596
+    },
+    {
+      "fold": 89,
+      "n_eligible": 798,
+      "pool_train_rows": 116160,
+      "epsilon": 0.00528960146360133,
+      "fold_auc": 0.4840025902663825
+    },
+    {
+      "fold": 90,
+      "n_eligible": 444,
+      "pool_train_rows": 116958,
+      "epsilon": 0.00529363843212435,
+      "fold_auc": 0.5619314489928524
+    },
+    {
+      "fold": 91,
+      "n_eligible": 1029,
+      "pool_train_rows": 117402,
+      "epsilon": 0.00529611732830351,
+      "fold_auc": 0.44610542879622345
+    },
+    {
+      "fold": 92,
+      "n_eligible": 1350,
+      "pool_train_rows": 118431,
+      "epsilon": 0.0053007755345486,
+      "fold_auc": 0.41417903884041657
+    },
+    {
+      "fold": 93,
+      "n_eligible": 876,
+      "pool_train_rows": 119781,
+      "epsilon": 0.0053088561958443,
+      "fold_auc": 0.5407457983193277
+    },
+    {
+      "fold": 94,
+      "n_eligible": 793,
+      "pool_train_rows": 120657,
+      "epsilon": 0.0053137384349877005,
+      "fold_auc": 0.4493295677174771
+    },
+    {
+      "fold": 95,
+      "n_eligible": 1699,
+      "pool_train_rows": 121450,
+      "epsilon": 0.005316888580019861,
+      "fold_auc": 0.4876926147372623
+    },
+    {
+      "fold": 96,
+      "n_eligible": 1323,
+      "pool_train_rows": 123149,
+      "epsilon": 0.0053244107186561,
+      "fold_auc": 0.5212411369007939
+    },
+    {
+      "fold": 97,
+      "n_eligible": 718,
+      "pool_train_rows": 124472,
+      "epsilon": 0.0053321183623161105,
+      "fold_auc": 0.5398750630504792
+    },
+    {
+      "fold": 98,
+      "n_eligible": 622,
+      "pool_train_rows": 125190,
+      "epsilon": 0.005335494486882131,
+      "fold_auc": 0.4552822748028228
+    },
+    {
+      "fold": 99,
+      "n_eligible": 1258,
+      "pool_train_rows": 125812,
+      "epsilon": 0.00533925085468545,
+      "fold_auc": 0.4686162099883008
+    },
+    {
+      "fold": 100,
+      "n_eligible": 590,
+      "pool_train_rows": 127070,
+      "epsilon": 0.005344518804763941,
+      "fold_auc": 0.49946736903716704
+    }
+  ],
+  "fallback_folds": [],
+  "n_fallback_folds": 0,
+  "audit_a": [
+    {
+      "fold": 1,
+      "train_max_ts": "2018-03-31 23:55:00+00:00",
+      "predict_min_ts": "2018-04-01 00:00:00+00:00"
+    },
+    {
+      "fold": 2,
+      "train_max_ts": "2018-04-30 23:55:00+00:00",
+      "predict_min_ts": "2018-05-01 00:00:00+00:00"
+    },
+    {
+      "fold": 3,
+      "train_max_ts": "2018-05-31 22:50:00+00:00",
+      "predict_min_ts": "2018-06-01 00:00:00+00:00"
+    },
+    {
+      "fold": 4,
+      "train_max_ts": "2018-06-30 23:55:00+00:00",
+      "predict_min_ts": "2018-07-01 00:00:00+00:00"
+    },
+    {
+      "fold": 5,
+      "train_max_ts": "2018-07-31 23:55:00+00:00",
+      "predict_min_ts": "2018-08-01 00:00:00+00:00"
+    },
+    {
+      "fold": 6,
+      "train_max_ts": "2018-08-31 23:35:00+00:00",
+      "predict_min_ts": "2018-09-01 00:00:00+00:00"
+    },
+    {
+      "fold": 7,
+      "train_max_ts": "2018-09-30 23:20:00+00:00",
+      "predict_min_ts": "2018-10-01 00:00:00+00:00"
+    },
+    {
+      "fold": 8,
+      "train_max_ts": "2018-10-31 15:55:00+00:00",
+      "predict_min_ts": "2018-11-01 00:00:00+00:00"
+    },
+    {
+      "fold": 9,
+      "train_max_ts": "2018-11-30 23:15:00+00:00",
+      "predict_min_ts": "2018-12-01 00:00:00+00:00"
+    },
+    {
+      "fold": 10,
+      "train_max_ts": "2018-12-31 22:15:00+00:00",
+      "predict_min_ts": "2019-01-01 00:00:00+00:00"
+    },
+    {
+      "fold": 11,
+      "train_max_ts": "2019-01-31 19:10:00+00:00",
+      "predict_min_ts": "2019-02-01 00:00:00+00:00"
+    },
+    {
+      "fold": 12,
+      "train_max_ts": "2019-02-28 15:45:00+00:00",
+      "predict_min_ts": "2019-03-01 00:00:00+00:00"
+    },
+    {
+      "fold": 13,
+      "train_max_ts": "2019-03-31 22:20:00+00:00",
+      "predict_min_ts": "2019-04-01 00:00:00+00:00"
+    },
+    {
+      "fold": 14,
+      "train_max_ts": "2019-04-30 20:15:00+00:00",
+      "predict_min_ts": "2019-05-01 00:00:00+00:00"
+    },
+    {
+      "fold": 15,
+      "train_max_ts": "2019-05-31 22:05:00+00:00",
+      "predict_min_ts": "2019-06-01 00:00:00+00:00"
+    },
+    {
+      "fold": 16,
+      "train_max_ts": "2019-06-30 23:55:00+00:00",
+      "predict_min_ts": "2019-07-01 00:00:00+00:00"
+    },
+    {
+      "fold": 17,
+      "train_max_ts": "2019-07-31 23:00:00+00:00",
+      "predict_min_ts": "2019-08-01 00:00:00+00:00"
+    },
+    {
+      "fold": 18,
+      "train_max_ts": "2019-08-31 21:05:00+00:00",
+      "predict_min_ts": "2019-09-01 00:00:00+00:00"
+    },
+    {
+      "fold": 19,
+      "train_max_ts": "2019-09-30 21:45:00+00:00",
+      "predict_min_ts": "2019-10-01 00:00:00+00:00"
+    },
+    {
+      "fold": 20,
+      "train_max_ts": "2019-10-31 21:15:00+00:00",
+      "predict_min_ts": "2019-11-01 00:00:00+00:00"
+    },
+    {
+      "fold": 21,
+      "train_max_ts": "2019-11-30 23:55:00+00:00",
+      "predict_min_ts": "2019-12-01 00:00:00+00:00"
+    },
+    {
+      "fold": 22,
+      "train_max_ts": "2019-12-31 20:50:00+00:00",
+      "predict_min_ts": "2020-01-01 00:00:00+00:00"
+    },
+    {
+      "fold": 23,
+      "train_max_ts": "2020-01-31 23:55:00+00:00",
+      "predict_min_ts": "2020-02-01 00:00:00+00:00"
+    },
+    {
+      "fold": 24,
+      "train_max_ts": "2020-02-29 23:55:00+00:00",
+      "predict_min_ts": "2020-03-01 00:00:00+00:00"
+    },
+    {
+      "fold": 25,
+      "train_max_ts": "2020-03-31 23:40:00+00:00",
+      "predict_min_ts": "2020-04-01 00:00:00+00:00"
+    },
+    {
+      "fold": 26,
+      "train_max_ts": "2020-04-30 23:55:00+00:00",
+      "predict_min_ts": "2020-05-01 00:00:00+00:00"
+    },
+    {
+      "fold": 27,
+      "train_max_ts": "2020-05-31 23:55:00+00:00",
+      "predict_min_ts": "2020-06-01 00:00:00+00:00"
+    },
+    {
+      "fold": 28,
+      "train_max_ts": "2020-06-30 23:25:00+00:00",
+      "predict_min_ts": "2020-07-01 00:00:00+00:00"
+    },
+    {
+      "fold": 29,
+      "train_max_ts": "2020-07-31 23:00:00+00:00",
+      "predict_min_ts": "2020-08-01 00:00:00+00:00"
+    },
+    {
+      "fold": 30,
+      "train_max_ts": "2020-08-31 23:10:00+00:00",
+      "predict_min_ts": "2020-09-01 00:00:00+00:00"
+    },
+    {
+      "fold": 31,
+      "train_max_ts": "2020-09-30 22:35:00+00:00",
+      "predict_min_ts": "2020-10-01 00:00:00+00:00"
+    },
+    {
+      "fold": 32,
+      "train_max_ts": "2020-10-31 23:00:00+00:00",
+      "predict_min_ts": "2020-11-01 00:00:00+00:00"
+    },
+    {
+      "fold": 33,
+      "train_max_ts": "2020-11-30 23:45:00+00:00",
+      "predict_min_ts": "2020-12-01 00:00:00+00:00"
+    },
+    {
+      "fold": 34,
+      "train_max_ts": "2020-12-31 23:20:00+00:00",
+      "predict_min_ts": "2021-01-01 00:00:00+00:00"
+    },
+    {
+      "fold": 35,
+      "train_max_ts": "2021-01-31 23:55:00+00:00",
+      "predict_min_ts": "2021-02-01 00:00:00+00:00"
+    },
+    {
+      "fold": 36,
+      "train_max_ts": "2021-02-28 23:20:00+00:00",
+      "predict_min_ts": "2021-03-01 00:00:00+00:00"
+    },
+    {
+      "fold": 37,
+      "train_max_ts": "2021-03-31 21:35:00+00:00",
+      "predict_min_ts": "2021-04-01 00:00:00+00:00"
+    },
+    {
+      "fold": 38,
+      "train_max_ts": "2021-04-30 22:50:00+00:00",
+      "predict_min_ts": "2021-05-01 00:00:00+00:00"
+    },
+    {
+      "fold": 39,
+      "train_max_ts": "2021-05-31 23:15:00+00:00",
+      "predict_min_ts": "2021-06-01 00:00:00+00:00"
+    },
+    {
+      "fold": 40,
+      "train_max_ts": "2021-06-30 23:40:00+00:00",
+      "predict_min_ts": "2021-07-01 00:00:00+00:00"
+    },
+    {
+      "fold": 41,
+      "train_max_ts": "2021-07-31 23:55:00+00:00",
+      "predict_min_ts": "2021-08-01 00:00:00+00:00"
+    },
+    {
+      "fold": 42,
+      "train_max_ts": "2021-08-31 23:45:00+00:00",
+      "predict_min_ts": "2021-09-01 00:00:00+00:00"
+    },
+    {
+      "fold": 43,
+      "train_max_ts": "2021-09-30 22:00:00+00:00",
+      "predict_min_ts": "2021-10-01 00:00:00+00:00"
+    },
+    {
+      "fold": 44,
+      "train_max_ts": "2021-10-31 23:05:00+00:00",
+      "predict_min_ts": "2021-11-01 00:00:00+00:00"
+    },
+    {
+      "fold": 45,
+      "train_max_ts": "2021-11-30 23:45:00+00:00",
+      "predict_min_ts": "2021-12-01 00:00:00+00:00"
+    },
+    {
+      "fold": 46,
+      "train_max_ts": "2021-12-31 23:50:00+00:00",
+      "predict_min_ts": "2022-01-01 00:00:00+00:00"
+    },
+    {
+      "fold": 47,
+      "train_max_ts": "2022-01-31 23:45:00+00:00",
+      "predict_min_ts": "2022-02-01 00:00:00+00:00"
+    },
+    {
+      "fold": 48,
+      "train_max_ts": "2022-02-28 23:40:00+00:00",
+      "predict_min_ts": "2022-03-01 00:00:00+00:00"
+    },
+    {
+      "fold": 49,
+      "train_max_ts": "2022-03-31 23:55:00+00:00",
+      "predict_min_ts": "2022-04-01 00:00:00+00:00"
+    },
+    {
+      "fold": 50,
+      "train_max_ts": "2022-04-30 23:55:00+00:00",
+      "predict_min_ts": "2022-05-01 00:00:00+00:00"
+    },
+    {
+      "fold": 51,
+      "train_max_ts": "2022-05-31 18:20:00+00:00",
+      "predict_min_ts": "2022-06-01 00:00:00+00:00"
+    },
+    {
+      "fold": 52,
+      "train_max_ts": "2022-06-30 23:55:00+00:00",
+      "predict_min_ts": "2022-07-01 00:00:00+00:00"
+    },
+    {
+      "fold": 53,
+      "train_max_ts": "2022-07-31 22:45:00+00:00",
+      "predict_min_ts": "2022-08-01 00:00:00+00:00"
+    },
+    {
+      "fold": 54,
+      "train_max_ts": "2022-08-31 23:40:00+00:00",
+      "predict_min_ts": "2022-09-01 00:00:00+00:00"
+    },
+    {
+      "fold": 55,
+      "train_max_ts": "2022-09-30 22:05:00+00:00",
+      "predict_min_ts": "2022-10-01 00:00:00+00:00"
+    },
+    {
+      "fold": 56,
+      "train_max_ts": "2022-10-31 14:20:00+00:00",
+      "predict_min_ts": "2022-11-01 00:00:00+00:00"
+    },
+    {
+      "fold": 57,
+      "train_max_ts": "2022-11-30 22:25:00+00:00",
+      "predict_min_ts": "2022-12-01 00:00:00+00:00"
+    },
+    {
+      "fold": 58,
+      "train_max_ts": "2022-12-30 15:00:00+00:00",
+      "predict_min_ts": "2023-01-01 00:00:00+00:00"
+    },
+    {
+      "fold": 59,
+      "train_max_ts": "2023-01-31 22:50:00+00:00",
+      "predict_min_ts": "2023-02-01 00:00:00+00:00"
+    },
+    {
+      "fold": 60,
+      "train_max_ts": "2023-02-28 23:30:00+00:00",
+      "predict_min_ts": "2023-03-01 00:00:00+00:00"
+    },
+    {
+      "fold": 61,
+      "train_max_ts": "2023-03-31 23:55:00+00:00",
+      "predict_min_ts": "2023-04-01 00:00:00+00:00"
+    },
+    {
+      "fold": 62,
+      "train_max_ts": "2023-04-30 23:55:00+00:00",
+      "predict_min_ts": "2023-05-01 00:00:00+00:00"
+    },
+    {
+      "fold": 63,
+      "train_max_ts": "2023-05-31 13:45:00+00:00",
+      "predict_min_ts": "2023-06-01 00:00:00+00:00"
+    },
+    {
+      "fold": 64,
+      "train_max_ts": "2023-06-30 17:20:00+00:00",
+      "predict_min_ts": "2023-07-01 00:00:00+00:00"
+    },
+    {
+      "fold": 65,
+      "train_max_ts": "2023-07-31 00:30:00+00:00",
+      "predict_min_ts": "2023-08-01 00:00:00+00:00"
+    },
+    {
+      "fold": 66,
+      "train_max_ts": "2023-08-31 21:10:00+00:00",
+      "predict_min_ts": "2023-09-01 00:00:00+00:00"
+    },
+    {
+      "fold": 67,
+      "train_max_ts": "2023-09-29 18:10:00+00:00",
+      "predict_min_ts": "2023-10-01 00:00:00+00:00"
+    },
+    {
+      "fold": 68,
+      "train_max_ts": "2023-10-31 21:45:00+00:00",
+      "predict_min_ts": "2023-11-01 00:00:00+00:00"
+    },
+    {
+      "fold": 69,
+      "train_max_ts": "2023-11-30 15:45:00+00:00",
+      "predict_min_ts": "2023-12-01 00:00:00+00:00"
+    },
+    {
+      "fold": 70,
+      "train_max_ts": "2023-12-31 23:35:00+00:00",
+      "predict_min_ts": "2024-01-01 00:00:00+00:00"
+    },
+    {
+      "fold": 71,
+      "train_max_ts": "2024-01-31 23:50:00+00:00",
+      "predict_min_ts": "2024-02-01 00:00:00+00:00"
+    },
+    {
+      "fold": 72,
+      "train_max_ts": "2024-02-29 22:15:00+00:00",
+      "predict_min_ts": "2024-03-01 00:00:00+00:00"
+    },
+    {
+      "fold": 73,
+      "train_max_ts": "2024-03-31 23:50:00+00:00",
+      "predict_min_ts": "2024-04-01 00:00:00+00:00"
+    },
+    {
+      "fold": 74,
+      "train_max_ts": "2024-04-30 23:30:00+00:00",
+      "predict_min_ts": "2024-05-01 00:00:00+00:00"
+    },
+    {
+      "fold": 75,
+      "train_max_ts": "2024-05-31 21:25:00+00:00",
+      "predict_min_ts": "2024-06-01 00:00:00+00:00"
+    },
+    {
+      "fold": 76,
+      "train_max_ts": "2024-06-30 23:55:00+00:00",
+      "predict_min_ts": "2024-07-01 00:00:00+00:00"
+    },
+    {
+      "fold": 77,
+      "train_max_ts": "2024-07-31 23:55:00+00:00",
+      "predict_min_ts": "2024-08-01 00:00:00+00:00"
+    },
+    {
+      "fold": 78,
+      "train_max_ts": "2024-08-31 09:15:00+00:00",
+      "predict_min_ts": "2024-09-01 00:00:00+00:00"
+    },
+    {
+      "fold": 79,
+      "train_max_ts": "2024-09-30 23:40:00+00:00",
+      "predict_min_ts": "2024-10-01 00:00:00+00:00"
+    },
+    {
+      "fold": 80,
+      "train_max_ts": "2024-10-31 23:50:00+00:00",
+      "predict_min_ts": "2024-11-01 00:00:00+00:00"
+    },
+    {
+      "fold": 81,
+      "train_max_ts": "2024-11-30 08:50:00+00:00",
+      "predict_min_ts": "2024-12-01 00:00:00+00:00"
+    },
+    {
+      "fold": 82,
+      "train_max_ts": "2024-12-31 23:00:00+00:00",
+      "predict_min_ts": "2025-01-01 00:00:00+00:00"
+    },
+    {
+      "fold": 83,
+      "train_max_ts": "2025-01-31 20:55:00+00:00",
+      "predict_min_ts": "2025-02-01 00:00:00+00:00"
+    },
+    {
+      "fold": 84,
+      "train_max_ts": "2025-02-28 20:15:00+00:00",
+      "predict_min_ts": "2025-03-01 00:00:00+00:00"
+    },
+    {
+      "fold": 85,
+      "train_max_ts": "2025-03-31 20:20:00+00:00",
+      "predict_min_ts": "2025-04-01 00:00:00+00:00"
+    },
+    {
+      "fold": 86,
+      "train_max_ts": "2025-04-30 19:40:00+00:00",
+      "predict_min_ts": "2025-05-01 00:00:00+00:00"
+    },
+    {
+      "fold": 87,
+      "train_max_ts": "2025-05-31 13:50:00+00:00",
+      "predict_min_ts": "2025-06-01 00:00:00+00:00"
+    },
+    {
+      "fold": 88,
+      "train_max_ts": "2025-06-30 19:55:00+00:00",
+      "predict_min_ts": "2025-07-01 00:00:00+00:00"
+    },
+    {
+      "fold": 89,
+      "train_max_ts": "2025-07-31 23:45:00+00:00",
+      "predict_min_ts": "2025-08-01 00:00:00+00:00"
+    },
+    {
+      "fold": 90,
+      "train_max_ts": "2025-08-31 23:05:00+00:00",
+      "predict_min_ts": "2025-09-01 00:00:00+00:00"
+    },
+    {
+      "fold": 91,
+      "train_max_ts": "2025-09-30 21:15:00+00:00",
+      "predict_min_ts": "2025-10-01 00:00:00+00:00"
+    },
+    {
+      "fold": 92,
+      "train_max_ts": "2025-10-31 17:25:00+00:00",
+      "predict_min_ts": "2025-11-01 00:00:00+00:00"
+    },
+    {
+      "fold": 93,
+      "train_max_ts": "2025-11-30 23:55:00+00:00",
+      "predict_min_ts": "2025-12-01 00:00:00+00:00"
+    },
+    {
+      "fold": 94,
+      "train_max_ts": "2025-12-31 15:10:00+00:00",
+      "predict_min_ts": "2026-01-01 00:00:00+00:00"
+    },
+    {
+      "fold": 95,
+      "train_max_ts": "2026-01-31 23:30:00+00:00",
+      "predict_min_ts": "2026-02-01 00:00:00+00:00"
+    },
+    {
+      "fold": 96,
+      "train_max_ts": "2026-02-28 23:50:00+00:00",
+      "predict_min_ts": "2026-03-01 00:00:00+00:00"
+    },
+    {
+      "fold": 97,
+      "train_max_ts": "2026-03-31 19:55:00+00:00",
+      "predict_min_ts": "2026-04-01 00:00:00+00:00"
+    },
+    {
+      "fold": 98,
+      "train_max_ts": "2026-04-30 11:40:00+00:00",
+      "predict_min_ts": "2026-05-01 00:00:00+00:00"
+    },
+    {
+      "fold": 99,
+      "train_max_ts": "2026-05-30 12:25:00+00:00",
+      "predict_min_ts": "2026-06-01 00:00:00+00:00"
+    },
+    {
+      "fold": 100,
+      "train_max_ts": "2026-06-30 18:00:00+00:00",
+      "predict_min_ts": "2026-07-01 00:00:00+00:00"
+    }
+  ],
+  "audit_b": [
+    {
+      "fold": 1,
+      "train_max_ts": "2018-03-31 23:55:00+00:00",
+      "predict_min_ts": "2018-04-01 00:00:00+00:00"
+    },
+    {
+      "fold": 2,
+      "train_max_ts": "2018-04-30 23:55:00+00:00",
+      "predict_min_ts": "2018-05-01 00:00:00+00:00"
+    },
+    {
+      "fold": 3,
+      "train_max_ts": "2018-05-31 22:50:00+00:00",
+      "predict_min_ts": "2018-06-01 00:00:00+00:00"
+    },
+    {
+      "fold": 4,
+      "train_max_ts": "2018-06-30 23:55:00+00:00",
+      "predict_min_ts": "2018-07-01 00:00:00+00:00"
+    },
+    {
+      "fold": 5,
+      "train_max_ts": "2018-07-31 23:55:00+00:00",
+      "predict_min_ts": "2018-08-01 00:00:00+00:00"
+    },
+    {
+      "fold": 6,
+      "train_max_ts": "2018-08-31 23:35:00+00:00",
+      "predict_min_ts": "2018-09-01 00:00:00+00:00"
+    },
+    {
+      "fold": 7,
+      "train_max_ts": "2018-09-30 23:20:00+00:00",
+      "predict_min_ts": "2018-10-01 00:00:00+00:00"
+    },
+    {
+      "fold": 8,
+      "train_max_ts": "2018-10-31 15:55:00+00:00",
+      "predict_min_ts": "2018-11-01 00:00:00+00:00"
+    },
+    {
+      "fold": 9,
+      "train_max_ts": "2018-11-30 23:15:00+00:00",
+      "predict_min_ts": "2018-12-01 00:00:00+00:00"
+    },
+    {
+      "fold": 10,
+      "train_max_ts": "2018-12-31 22:15:00+00:00",
+      "predict_min_ts": "2019-01-01 00:00:00+00:00"
+    },
+    {
+      "fold": 11,
+      "train_max_ts": "2019-01-31 19:10:00+00:00",
+      "predict_min_ts": "2019-02-01 00:00:00+00:00"
+    },
+    {
+      "fold": 12,
+      "train_max_ts": "2019-02-28 15:45:00+00:00",
+      "predict_min_ts": "2019-03-01 00:00:00+00:00"
+    },
+    {
+      "fold": 13,
+      "train_max_ts": "2019-03-31 22:20:00+00:00",
+      "predict_min_ts": "2019-04-01 00:00:00+00:00"
+    },
+    {
+      "fold": 14,
+      "train_max_ts": "2019-04-30 20:15:00+00:00",
+      "predict_min_ts": "2019-05-01 00:00:00+00:00"
+    },
+    {
+      "fold": 15,
+      "train_max_ts": "2019-05-31 22:05:00+00:00",
+      "predict_min_ts": "2019-06-01 00:00:00+00:00"
+    },
+    {
+      "fold": 16,
+      "train_max_ts": "2019-06-30 23:55:00+00:00",
+      "predict_min_ts": "2019-07-01 00:00:00+00:00"
+    },
+    {
+      "fold": 17,
+      "train_max_ts": "2019-07-31 23:00:00+00:00",
+      "predict_min_ts": "2019-08-01 00:00:00+00:00"
+    },
+    {
+      "fold": 18,
+      "train_max_ts": "2019-08-31 21:05:00+00:00",
+      "predict_min_ts": "2019-09-01 00:00:00+00:00"
+    },
+    {
+      "fold": 19,
+      "train_max_ts": "2019-09-30 21:45:00+00:00",
+      "predict_min_ts": "2019-10-01 00:00:00+00:00"
+    },
+    {
+      "fold": 20,
+      "train_max_ts": "2019-10-31 21:15:00+00:00",
+      "predict_min_ts": "2019-11-01 00:00:00+00:00"
+    },
+    {
+      "fold": 21,
+      "train_max_ts": "2019-11-30 23:55:00+00:00",
+      "predict_min_ts": "2019-12-01 00:00:00+00:00"
+    },
+    {
+      "fold": 22,
+      "train_max_ts": "2019-12-31 20:50:00+00:00",
+      "predict_min_ts": "2020-01-01 00:00:00+00:00"
+    },
+    {
+      "fold": 23,
+      "train_max_ts": "2020-01-31 23:55:00+00:00",
+      "predict_min_ts": "2020-02-01 00:00:00+00:00"
+    },
+    {
+      "fold": 24,
+      "train_max_ts": "2020-02-29 23:55:00+00:00",
+      "predict_min_ts": "2020-03-01 00:00:00+00:00"
+    },
+    {
+      "fold": 25,
+      "train_max_ts": "2020-03-31 23:40:00+00:00",
+      "predict_min_ts": "2020-04-01 00:00:00+00:00"
+    },
+    {
+      "fold": 26,
+      "train_max_ts": "2020-04-30 23:55:00+00:00",
+      "predict_min_ts": "2020-05-01 00:00:00+00:00"
+    },
+    {
+      "fold": 27,
+      "train_max_ts": "2020-05-31 23:55:00+00:00",
+      "predict_min_ts": "2020-06-01 00:00:00+00:00"
+    },
+    {
+      "fold": 28,
+      "train_max_ts": "2020-06-30 23:25:00+00:00",
+      "predict_min_ts": "2020-07-01 00:00:00+00:00"
+    },
+    {
+      "fold": 29,
+      "train_max_ts": "2020-07-31 23:00:00+00:00",
+      "predict_min_ts": "2020-08-01 00:00:00+00:00"
+    },
+    {
+      "fold": 30,
+      "train_max_ts": "2020-08-31 23:10:00+00:00",
+      "predict_min_ts": "2020-09-01 00:00:00+00:00"
+    },
+    {
+      "fold": 31,
+      "train_max_ts": "2020-09-30 22:35:00+00:00",
+      "predict_min_ts": "2020-10-01 00:00:00+00:00"
+    },
+    {
+      "fold": 32,
+      "train_max_ts": "2020-10-31 23:00:00+00:00",
+      "predict_min_ts": "2020-11-01 00:00:00+00:00"
+    },
+    {
+      "fold": 33,
+      "train_max_ts": "2020-11-30 23:45:00+00:00",
+      "predict_min_ts": "2020-12-01 00:00:00+00:00"
+    },
+    {
+      "fold": 34,
+      "train_max_ts": "2020-12-31 23:20:00+00:00",
+      "predict_min_ts": "2021-01-01 00:00:00+00:00"
+    },
+    {
+      "fold": 35,
+      "train_max_ts": "2021-01-31 23:55:00+00:00",
+      "predict_min_ts": "2021-02-01 00:00:00+00:00"
+    },
+    {
+      "fold": 36,
+      "train_max_ts": "2021-02-28 23:20:00+00:00",
+      "predict_min_ts": "2021-03-01 00:00:00+00:00"
+    },
+    {
+      "fold": 37,
+      "train_max_ts": "2021-03-31 21:35:00+00:00",
+      "predict_min_ts": "2021-04-01 00:00:00+00:00"
+    },
+    {
+      "fold": 38,
+      "train_max_ts": "2021-04-30 22:50:00+00:00",
+      "predict_min_ts": "2021-05-01 00:00:00+00:00"
+    },
+    {
+      "fold": 39,
+      "train_max_ts": "2021-05-31 23:15:00+00:00",
+      "predict_min_ts": "2021-06-01 00:00:00+00:00"
+    },
+    {
+      "fold": 40,
+      "train_max_ts": "2021-06-30 23:40:00+00:00",
+      "predict_min_ts": "2021-07-01 00:00:00+00:00"
+    },
+    {
+      "fold": 41,
+      "train_max_ts": "2021-07-31 23:55:00+00:00",
+      "predict_min_ts": "2021-08-01 00:00:00+00:00"
+    },
+    {
+      "fold": 42,
+      "train_max_ts": "2021-08-31 23:45:00+00:00",
+      "predict_min_ts": "2021-09-01 00:00:00+00:00"
+    },
+    {
+      "fold": 43,
+      "train_max_ts": "2021-09-30 22:00:00+00:00",
+      "predict_min_ts": "2021-10-01 00:00:00+00:00"
+    },
+    {
+      "fold": 44,
+      "train_max_ts": "2021-10-31 23:05:00+00:00",
+      "predict_min_ts": "2021-11-01 00:00:00+00:00"
+    },
+    {
+      "fold": 45,
+      "train_max_ts": "2021-11-30 23:45:00+00:00",
+      "predict_min_ts": "2021-12-01 00:00:00+00:00"
+    },
+    {
+      "fold": 46,
+      "train_max_ts": "2021-12-31 23:50:00+00:00",
+      "predict_min_ts": "2022-01-01 00:00:00+00:00"
+    },
+    {
+      "fold": 47,
+      "train_max_ts": "2022-01-31 23:45:00+00:00",
+      "predict_min_ts": "2022-02-01 00:00:00+00:00"
+    },
+    {
+      "fold": 48,
+      "train_max_ts": "2022-02-28 23:40:00+00:00",
+      "predict_min_ts": "2022-03-01 00:00:00+00:00"
+    },
+    {
+      "fold": 49,
+      "train_max_ts": "2022-03-31 23:55:00+00:00",
+      "predict_min_ts": "2022-04-01 00:00:00+00:00"
+    },
+    {
+      "fold": 50,
+      "train_max_ts": "2022-04-30 23:55:00+00:00",
+      "predict_min_ts": "2022-05-01 00:00:00+00:00"
+    },
+    {
+      "fold": 51,
+      "train_max_ts": "2022-05-31 18:20:00+00:00",
+      "predict_min_ts": "2022-06-01 00:00:00+00:00"
+    },
+    {
+      "fold": 52,
+      "train_max_ts": "2022-06-30 23:55:00+00:00",
+      "predict_min_ts": "2022-07-01 00:00:00+00:00"
+    },
+    {
+      "fold": 53,
+      "train_max_ts": "2022-07-31 22:45:00+00:00",
+      "predict_min_ts": "2022-08-01 00:00:00+00:00"
+    },
+    {
+      "fold": 54,
+      "train_max_ts": "2022-08-31 23:40:00+00:00",
+      "predict_min_ts": "2022-09-01 00:00:00+00:00"
+    },
+    {
+      "fold": 55,
+      "train_max_ts": "2022-09-30 22:05:00+00:00",
+      "predict_min_ts": "2022-10-01 00:00:00+00:00"
+    },
+    {
+      "fold": 56,
+      "train_max_ts": "2022-10-31 14:20:00+00:00",
+      "predict_min_ts": "2022-11-01 00:00:00+00:00"
+    },
+    {
+      "fold": 57,
+      "train_max_ts": "2022-11-30 22:25:00+00:00",
+      "predict_min_ts": "2022-12-01 00:00:00+00:00"
+    },
+    {
+      "fold": 58,
+      "train_max_ts": "2022-12-30 15:00:00+00:00",
+      "predict_min_ts": "2023-01-01 00:00:00+00:00"
+    },
+    {
+      "fold": 59,
+      "train_max_ts": "2023-01-31 22:50:00+00:00",
+      "predict_min_ts": "2023-02-01 00:00:00+00:00"
+    },
+    {
+      "fold": 60,
+      "train_max_ts": "2023-02-28 23:30:00+00:00",
+      "predict_min_ts": "2023-03-01 00:00:00+00:00"
+    },
+    {
+      "fold": 61,
+      "train_max_ts": "2023-03-31 23:55:00+00:00",
+      "predict_min_ts": "2023-04-01 00:00:00+00:00"
+    },
+    {
+      "fold": 62,
+      "train_max_ts": "2023-04-30 23:55:00+00:00",
+      "predict_min_ts": "2023-05-01 00:00:00+00:00"
+    },
+    {
+      "fold": 63,
+      "train_max_ts": "2023-05-31 13:45:00+00:00",
+      "predict_min_ts": "2023-06-01 00:00:00+00:00"
+    },
+    {
+      "fold": 64,
+      "train_max_ts": "2023-06-30 17:20:00+00:00",
+      "predict_min_ts": "2023-07-01 00:00:00+00:00"
+    },
+    {
+      "fold": 65,
+      "train_max_ts": "2023-07-31 00:30:00+00:00",
+      "predict_min_ts": "2023-08-01 00:00:00+00:00"
+    },
+    {
+      "fold": 66,
+      "train_max_ts": "2023-08-31 21:10:00+00:00",
+      "predict_min_ts": "2023-09-01 00:00:00+00:00"
+    },
+    {
+      "fold": 67,
+      "train_max_ts": "2023-09-29 18:10:00+00:00",
+      "predict_min_ts": "2023-10-01 00:00:00+00:00"
+    },
+    {
+      "fold": 68,
+      "train_max_ts": "2023-10-31 21:45:00+00:00",
+      "predict_min_ts": "2023-11-01 00:00:00+00:00"
+    },
+    {
+      "fold": 69,
+      "train_max_ts": "2023-11-30 15:45:00+00:00",
+      "predict_min_ts": "2023-12-01 00:00:00+00:00"
+    },
+    {
+      "fold": 70,
+      "train_max_ts": "2023-12-31 23:35:00+00:00",
+      "predict_min_ts": "2024-01-01 00:00:00+00:00"
+    },
+    {
+      "fold": 71,
+      "train_max_ts": "2024-01-31 23:50:00+00:00",
+      "predict_min_ts": "2024-02-01 00:00:00+00:00"
+    },
+    {
+      "fold": 72,
+      "train_max_ts": "2024-02-29 22:15:00+00:00",
+      "predict_min_ts": "2024-03-01 00:00:00+00:00"
+    },
+    {
+      "fold": 73,
+      "train_max_ts": "2024-03-31 23:50:00+00:00",
+      "predict_min_ts": "2024-04-01 00:00:00+00:00"
+    },
+    {
+      "fold": 74,
+      "train_max_ts": "2024-04-30 23:30:00+00:00",
+      "predict_min_ts": "2024-05-01 00:00:00+00:00"
+    },
+    {
+      "fold": 75,
+      "train_max_ts": "2024-05-31 21:25:00+00:00",
+      "predict_min_ts": "2024-06-01 00:00:00+00:00"
+    },
+    {
+      "fold": 76,
+      "train_max_ts": "2024-06-30 23:55:00+00:00",
+      "predict_min_ts": "2024-07-01 00:00:00+00:00"
+    },
+    {
+      "fold": 77,
+      "train_max_ts": "2024-07-31 23:55:00+00:00",
+      "predict_min_ts": "2024-08-01 00:00:00+00:00"
+    },
+    {
+      "fold": 78,
+      "train_max_ts": "2024-08-31 09:15:00+00:00",
+      "predict_min_ts": "2024-09-01 00:00:00+00:00"
+    },
+    {
+      "fold": 79,
+      "train_max_ts": "2024-09-30 23:40:00+00:00",
+      "predict_min_ts": "2024-10-01 00:00:00+00:00"
+    },
+    {
+      "fold": 80,
+      "train_max_ts": "2024-10-31 23:50:00+00:00",
+      "predict_min_ts": "2024-11-01 00:00:00+00:00"
+    },
+    {
+      "fold": 81,
+      "train_max_ts": "2024-11-30 08:50:00+00:00",
+      "predict_min_ts": "2024-12-01 00:00:00+00:00"
+    },
+    {
+      "fold": 82,
+      "train_max_ts": "2024-12-31 23:00:00+00:00",
+      "predict_min_ts": "2025-01-01 00:00:00+00:00"
+    },
+    {
+      "fold": 83,
+      "train_max_ts": "2025-01-31 20:55:00+00:00",
+      "predict_min_ts": "2025-02-01 00:00:00+00:00"
+    },
+    {
+      "fold": 84,
+      "train_max_ts": "2025-02-28 20:15:00+00:00",
+      "predict_min_ts": "2025-03-01 00:00:00+00:00"
+    },
+    {
+      "fold": 85,
+      "train_max_ts": "2025-03-31 20:20:00+00:00",
+      "predict_min_ts": "2025-04-01 00:00:00+00:00"
+    },
+    {
+      "fold": 86,
+      "train_max_ts": "2025-04-30 19:40:00+00:00",
+      "predict_min_ts": "2025-05-01 00:00:00+00:00"
+    },
+    {
+      "fold": 87,
+      "train_max_ts": "2025-05-31 13:50:00+00:00",
+      "predict_min_ts": "2025-06-01 00:00:00+00:00"
+    },
+    {
+      "fold": 88,
+      "train_max_ts": "2025-06-30 19:55:00+00:00",
+      "predict_min_ts": "2025-07-01 00:00:00+00:00"
+    },
+    {
+      "fold": 89,
+      "train_max_ts": "2025-07-31 23:45:00+00:00",
+      "predict_min_ts": "2025-08-01 00:00:00+00:00"
+    },
+    {
+      "fold": 90,
+      "train_max_ts": "2025-08-31 23:05:00+00:00",
+      "predict_min_ts": "2025-09-01 00:00:00+00:00"
+    },
+    {
+      "fold": 91,
+      "train_max_ts": "2025-09-30 21:15:00+00:00",
+      "predict_min_ts": "2025-10-01 00:00:00+00:00"
+    },
+    {
+      "fold": 92,
+      "train_max_ts": "2025-10-31 17:25:00+00:00",
+      "predict_min_ts": "2025-11-01 00:00:00+00:00"
+    },
+    {
+      "fold": 93,
+      "train_max_ts": "2025-11-30 23:55:00+00:00",
+      "predict_min_ts": "2025-12-01 00:00:00+00:00"
+    },
+    {
+      "fold": 94,
+      "train_max_ts": "2025-12-31 15:10:00+00:00",
+      "predict_min_ts": "2026-01-01 00:00:00+00:00"
+    },
+    {
+      "fold": 95,
+      "train_max_ts": "2026-01-31 23:30:00+00:00",
+      "predict_min_ts": "2026-02-01 00:00:00+00:00"
+    },
+    {
+      "fold": 96,
+      "train_max_ts": "2026-02-28 23:50:00+00:00",
+      "predict_min_ts": "2026-03-01 00:00:00+00:00"
+    },
+    {
+      "fold": 97,
+      "train_max_ts": "2026-03-31 19:55:00+00:00",
+      "predict_min_ts": "2026-04-01 00:00:00+00:00"
+    },
+    {
+      "fold": 98,
+      "train_max_ts": "2026-04-30 11:40:00+00:00",
+      "predict_min_ts": "2026-05-01 00:00:00+00:00"
+    },
+    {
+      "fold": 99,
+      "train_max_ts": "2026-05-30 12:25:00+00:00",
+      "predict_min_ts": "2026-06-01 00:00:00+00:00"
+    },
+    {
+      "fold": 100,
+      "train_max_ts": "2026-06-30 18:00:00+00:00",
+      "predict_min_ts": "2026-07-01 00:00:00+00:00"
+    }
+  ],
+  "runtime_s": 52.329243898391724
+}
